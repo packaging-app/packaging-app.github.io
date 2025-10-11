@@ -9,25 +9,33 @@ import React from "react";
 import HeroSection from "@/Components/LandingPage/HeroSection";
 import IntroductionSection from "@/Components/LandingPage/IntroductionSection";
 import ServicesSection from "@/Components/LandingPage/ServicesSection";
+import SustainabilitySection from "@/Components/LandingPage/SustainabilitySection";
+import PackagingShowcaseSection from "@/Components/LandingPage/PackagingShowcaseSection";
+import VisualMerchandisingSection from "@/Components/LandingPage/VisualMerchandisingSection";
+import CertificationsSection from "@/Components/LandingPage/CertificationsSection";
 import PartnersSection from "@/Components/LandingPage/PartnersSection";
 
 export default function Home() {
 
-    React.useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
-        scrollAnimator();
-    }, []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+    scrollAnimator();
+  }, []);
 
-    return (
-      <>
-        <NavBar />
-          <HeroSection />
-          <IntroductionSection />
-          <ServicesSection />
-          <PartnersSection />
-          <ReservationSection />
-          <ContactSection />
-        <Footer />
-      </>
+  return (
+    <>
+      <NavBar />
+      <HeroSection />
+      <IntroductionSection />
+      <ServicesSection />
+      <PackagingShowcaseSection />
+      <VisualMerchandisingSection />
+      <SustainabilitySection />
+      <CertificationsSection />
+      <PartnersSection />
+      <ReservationSection />
+      <ContactSection />
+      <Footer />
+    </>
   );
 }

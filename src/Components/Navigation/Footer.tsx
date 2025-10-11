@@ -1,12 +1,14 @@
 "use client"
 
+import Image from "next/image";
+import Link from "next/link";
 import { CustomButton } from "@/Components/Button/CustomButton";
 
 const services = [
-  { name: "Image de Marque", href: "/branding" },
-  { name: "Gestion des relations clients", href: "/crm" },
-  { name: "Digitalisation", href: "/digitalization" },
-  { name: "Retail", href: "/retail" },
+  { name: "Packaging Solutions", href: "/packaging" },
+  { name: "Visual Merchandising", href: "/visual-merchandising" },
+  { name: "Eco Design & R&D", href: "/eco-design" },
+  { name: "Global Sourcing", href: "/global-sourcing" },
 ];
 
 export default function Footer() {
@@ -15,20 +17,22 @@ export default function Footer() {
       <div className="mx-auto px-6 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Logo + Description */}
         <div className="md:col-span-2 space-y-4">
-          <a href="/" className="block h-8 w-fit">
-            <img
+          <Link href="/" className="block h-8 w-fit">
+            <Image
               src="/img/logos/logo-with-title.png"
               alt="FLM Solutions Logo"
+              width={200}
+              height={32}
               className="h-8 w-auto"
             />
-          </a>
+          </Link>
 
           <p className="text-sm max-w-xs mt-2">
-            FLM Solutions vous aide à moderniser, structurer et développer vos
-            process commerciaux en mettant en avant vos services et votre image
-            de marque.
+            We guide global brands towards sustainable packaging design & material selection.
+            From eco-design and research to global sourcing and inventory management,
+            we provide end-to-end packaging and visual merchandising solutions.
           </p>
-          <CustomButton>Contactez Nous</CustomButton>
+          <CustomButton>Contact Us</CustomButton>
         </div>
 
         {/* Product */}
@@ -50,19 +54,19 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Company</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:text-main-blue">
-                Accueil
-              </a>
+              <Link href="/" className="hover:text-main-blue">
+                Home
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-main-blue">
-                A Propos
-              </a>
+              <Link href="/about" className="hover:text-main-blue">
+                About
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-main-blue">
+              <Link href="/contact" className="hover:text-main-blue">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -71,7 +75,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="mt-12 border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm px-6 lg:px-16">
         <p>
-          © {new Date().getFullYear()} FLM Solutions. Tous droits réservés.
+          © {new Date().getFullYear()} Packaging & Visual Merchandising Solutions. All rights reserved.
         </p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <a

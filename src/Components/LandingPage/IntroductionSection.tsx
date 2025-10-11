@@ -17,26 +17,27 @@ export default function IntroductionSection() {
           </div>
           <div className="col-start-1 col-end-8 row-start-4 row-end-11 h-full w-full overflow-hidden rounded-md rounded-tr-[80px] rounded-bl-[80px] flex items-center">
             <img
-              src="/img/lp-i-b.png"
+              src="/img/luxury-chocolate.jpg"
               alt="Team meeting"
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
-          <div className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full bg-secondary-green"></div>
+          <div className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full" style={{ backgroundColor: '#c8b2a2' }}></div>
         </div>
 
         {/* Right Content */}
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full font-semibold">
-          <h6 className="text-secondary-green uppercase">Qui Sommes nous ?</h6>
-          <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold text-gray-900 leading-snug">
-            12 ans d’expérience à votre disposition
+          <h6 className="text-primary uppercase">About Nimetex Groupe</h6>
+          <h1 className="text-3xl font-bold text-gray-900 leading-snug sm:text-4xl">
+            Leading Packaging Innovation
           </h1>
           <p className="text-gray-600 xl:text-lg lg:text-md text-sm">
-            Fondée en 2013, Flm solutions est un cabinet de consulting basé à
-            Tunis, spécialisé dans le développement commercial, la gestion de
-            l'image de marque et la gestion de la relation client.
+            Nimetex Groupe specializes in comprehensive packaging and visual merchandising solutions.
+            We partner with global brands to create sustainable, innovative packaging designs that
+            reduce environmental impact while maximizing brand value. Our expertise spans from
+            eco-design and material selection to global sourcing and supply chain optimization.
           </p>
-          <CustomButton href={"/contact"}>Commencer Maintenant</CustomButton>
+          <CustomButton href={"/contact"}>Get Started</CustomButton>
         </div>
       </div>
     </section>

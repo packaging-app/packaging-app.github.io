@@ -13,40 +13,41 @@ import {
 } from "@headlessui/react";
 import React from "react";
 import {
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
+  CubeIcon,
+  ShoppingBagIcon,
+  BeakerIcon,
+  GlobeAltIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { Bars3Icon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
 const services = [
   {
-    name: "Image de Marque",
-    description: "Construisez une identité qui marque",
-    href: "/branding",
-    icon: ChartPieIcon,
+    name: "Packaging Solutions",
+    description: "Sustainable packaging design & material selection",
+    href: "/packaging",
+    icon: CubeIcon,
   },
   {
-    name: "Gestion des relations clients",
-    description: "Renforcez vos liens, fidélisez vos clients",
-    href: "/crm",
-    icon: CursorArrowRaysIcon,
+    name: "Visual Merchandising",
+    description: "Complete visual merchandising solutions",
+    href: "/visual-merchandising",
+    icon: ShoppingBagIcon,
   },
   {
-    name: "Digitalisation",
-    description: "Passez au digital, gagnez en agilité",
-    href: "/digitalization",
-    icon: FingerPrintIcon,
+    name: "Eco Design & R&D",
+    description: "Sustainable materials & circular design",
+    href: "/eco-design",
+    icon: BeakerIcon,
   },
   {
-    name: "Retail",
-    description: "Boostez vos ventes avec connexions intelligentes",
-    href: "/retail",
-    icon: SquaresPlusIcon,
+    name: "Global Sourcing",
+    description: "Global network of manufacturing partners",
+    href: "/global-sourcing",
+    icon: GlobeAltIcon,
   },
 ];
 
@@ -86,12 +87,12 @@ export default function NavBar() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm/6 font-semibold">
-            Acceuil
-          </a>
-          <a href="/about" className="text-sm/6 font-semibold">
-            A Propos
-          </a>
+          <Link href="/" className="text-sm/6 font-semibold">
+            Home
+          </Link>
+          <Link href="/about" className="text-sm/6 font-semibold">
+            About
+          </Link>
           <Popover className="relative">
             <PopoverButton className="focus:outline-none focus:ring-0 flex items-center gap-x-1 text-sm/6 font-semibold cursor-pointer">
               Services
@@ -143,7 +144,7 @@ export default function NavBar() {
           </Popover>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <CustomButton isWhite={true} href={"/contact"}>Contactez Nous</CustomButton>
+          <CustomButton isWhite={true} href={"/contact"}>Contact Us</CustomButton>
         </div>
         <Dialog
           open={mobileMenuOpen}
@@ -194,17 +195,17 @@ export default function NavBar() {
                       ))}
                     </DisclosurePanel>
                   </Disclosure>
-                  <a
-                    href="/public"
+                  <Link
+                    href="/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-white/5"
                   >
-                    Acceuil
-                  </a>
+                    Home
+                  </Link>
                   <a
                     href="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-white/5"
                   >
-                    A propos
+                    About
                   </a>
                 </div>
                 <div className="py-6">

@@ -83,23 +83,23 @@ export default function PartnersSection() {
         {/* Header */}
         <div className="flex flex-row justify-between items-center w-full">
           <div className="flex flex-col">
-            <p className="text-blue-500 font-semibold uppercase">
-              Nos Partenaires
+            <p className="text-primary font-semibold uppercase">
+              Our Partners
             </p>
             <h2 className="mt-2 xl:text-3xl lg:text-2xl text-xl font-bold tracking-tight text-gray-900">
-              Des entreprises qui nous ont fait confiance
+              Trusted by Leading Brands
             </h2>
           </div>
           <div className="flex-row gap-2 lg:flex hidden">
             <button
               onClick={prev}
-              className="p-2 border h-fit w-fit border-blue-600 rounded-md text-blue-600 hover:bg-blue-50"
+              className="p-2 border h-fit w-fit border-primary rounded-md text-primary hover:bg-primary/10"
             >
               <ChevronLeftIcon className="h-5 w-5" />
             </button>
             <button
               onClick={next}
-              className="p-2 border h-fit w-fit border-blue-600 rounded-md text-blue-600 hover:bg-blue-50"
+              className="p-2 border h-fit w-fit border-primary rounded-md text-primary hover:bg-primary/10"
             >
               <ChevronRightIcon className="h-5 w-5" />
             </button>
