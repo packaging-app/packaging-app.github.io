@@ -1,7 +1,1 @@
 @import "tailwindcss";
-
-@theme {
-    --color-faint: #f3f5f9;
-    --color-main-blue: #3167d9;
-    --color-secondary-green: #56d5e6;
-}

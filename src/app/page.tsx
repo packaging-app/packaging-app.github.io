@@ -9,11 +9,11 @@ import React from "react";
 import HeroSection from "@/Components/LandingPage/HeroSection";
 import IntroductionSection from "@/Components/LandingPage/IntroductionSection";
 import ServicesSection from "@/Components/LandingPage/ServicesSection";
-import SustainabilitySection from "@/Components/LandingPage/SustainabilitySection";
+// import SustainabilitySection from "@/Components/LandingPage/SustainabilitySection";
 import PackagingShowcaseSection from "@/Components/LandingPage/PackagingShowcaseSection";
 import VisualMerchandisingSection from "@/Components/LandingPage/VisualMerchandisingSection";
 import CertificationsSection from "@/Components/LandingPage/CertificationsSection";
-import PartnersSection from "@/Components/LandingPage/PartnersSection";
+// import PartnersSection from "@/Components/LandingPage/PartnersSection";
 
 export default function Home() {
 
@@ -30,9 +30,9 @@ export default function Home() {
       <ServicesSection />
       <PackagingShowcaseSection />
       <VisualMerchandisingSection />
-      <SustainabilitySection />
+      {/* <SustainabilitySection /> */}
       <CertificationsSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <ReservationSection />
       <ContactSection />
       <Footer />

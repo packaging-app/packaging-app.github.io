@@ -64,13 +64,13 @@ export default function NavBar() {
           <a href={"/"} className="-m-1.5 p-1.5">
             <img
               alt="FML Logo"
-              src="/img/logos/logo-no-title.png"
+              src="/img/logos/nimetex-logo.png"
               className="h-8 w-auto lg:hidden"
             />
             <img
               alt="FML Logo"
-              src="/img/logos/logo-with-title.png"
-              className="h-8 w-auto lg:block hidden"
+              src="/img/logos/nimetex-logo.png"
+              className="h-12 w-[100px] lg:block hidden"
             />
           </a>
         </div>
@@ -87,51 +87,51 @@ export default function NavBar() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link href="/" className="text-sm/6 font-semibold">
+          <Link href="/" className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300">
             Home
           </Link>
-          <Link href="/about" className="text-sm/6 font-semibold">
+          <Link href="/about" className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300">
             About
           </Link>
           <Popover className="relative">
-            <PopoverButton className="focus:outline-none focus:ring-0 flex items-center gap-x-1 text-sm/6 font-semibold cursor-pointer">
+            <PopoverButton className="focus:outline-none focus:ring-0 flex items-center gap-x-1 text-sm/6 font-semibold cursor-pointer text-gray-900 hover:text-primary transition-colors duration-300">
               Services
               <ChevronDownIcon
                 aria-hidden="true"
-                className="size-5 flex-none text-black"
+                className="size-5 flex-none text-gray-900 group-data-[open]:rotate-180 transition-transform duration-300"
               />
             </PopoverButton>
 
             <PopoverPanel
               transition
-              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-3xl bg-faint outline-1 -outline-offset-1 outline-white/10 shadow-xl transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+              className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-2xl bg-white shadow-2xl border border-gray-100 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
             >
-              <div className="p-4">
+              <div className="p-6">
                 {services.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                    className="group relative flex items-center gap-x-4 rounded-xl p-4 text-sm/6 hover:bg-primary/5 transition-all duration-300"
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-faint group-hover:bg-main-blue transition duration-300">
+                    <div className="flex size-12 flex-none items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary transition-all duration-300" style={{ backgroundColor: 'rgba(148, 176, 185, 0.1)' }}>
                       <item.icon
                         aria-hidden="true"
-                        className="size-6 text-main-blue group-hover:text-white transition duration-300"
+                        className="size-6 text-primary transition-colors duration-300"
                       />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold">
+                      <a href={item.href} className="block font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      <p className="mt-1 text-gray-400">{item.description}</p>
+                      <p className="mt-1 text-gray-600 text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="bg-main-blue hover:opacity-80 transition duration-300">
+              <div className="bg-primary hover:bg-primary/90 transition-colors duration-300 rounded-b-2xl" style={{ backgroundColor: '#94b0b9' }}>
                 <a
                   href={"/contact"}
-                  className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-faint"
+                  className="flex items-center justify-center gap-x-2.5 p-4 text-sm/6 font-semibold text-white hover:text-white"
                 >
                   <PhoneIcon
                     aria-hidden="true"

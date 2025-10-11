@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import {
   CubeIcon,
   ShoppingBagIcon,
@@ -14,6 +15,7 @@ const services = [
       "Comprehensive packaging solutions including paper packaging, textile packaging, cases, jewelry & watch packaging, and e-commerce packaging designed for sustainability and brand impact.",
     icon: CubeIcon,
     link: "/packaging",
+    image: "/img/p6.jpg",
   },
   {
     name: "Visual Merchandising",
@@ -21,6 +23,7 @@ const services = [
       "Complete visual merchandising solutions including displays, point of purchase materials, travel retail installations, and shop window & backlit panels to enhance brand presence.",
     icon: ShoppingBagIcon,
     link: "/visual-merchandising",
+    image: "/img/p7.jpg",
   },
   {
     name: "Eco Design & R&D",
@@ -28,6 +31,7 @@ const services = [
       "In-house research and development focused on sustainable materials, circular design approaches, and innovative packaging solutions that reduce environmental impact.",
     icon: BeakerIcon,
     link: "/eco-design",
+    image: "/img/p8.jpg",
   },
   {
     name: "Global Sourcing",
@@ -35,6 +39,7 @@ const services = [
       "Global network of manufacturing partners with transparent supply chains, certified materials, and low-emission transportation methods for sustainable procurement.",
     icon: GlobeAltIcon,
     link: "/global-sourcing",
+    image: "/img/p9.jpg",
   },
 ];
 
@@ -47,30 +52,40 @@ export default function ServicesSection() {
           Sustainable Packaging & Visual Merchandising
         </h2>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2 text-left">
           {services.map((service) => (
             <div
               key={service.name}
-              className="rounded-2xl bg-white p-8 shadow hover:shadow-lg transition"
+              className="rounded-2xl bg-white shadow hover:shadow-lg transition overflow-hidden"
             >
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <service.icon
-                  className="h-6 w-6 text-primary"
-                  aria-hidden="true"
-                />
+              <div className="flex">
+                {/* Image on the left */}
+                <div className="w-1/3 relative">
+                  <Image
+                    src={service.image}
+                    alt={service.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Content on the right */}
+                <div className="w-2/3 p-8">
+
+                  <h3 className="lg:text-xl text-lg font-semibold text-gray-900">
+                    {service.name}
+                  </h3>
+                  <p className="mt-2 text-gray-600 lg:text-lg text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                  {/* <a
+                    href={service.link}
+                    className="mt-4 inline-block lg:text-lg text-sm font-semibold text-primary hover:underline"
+                  >
+                    Learn More
+                  </a> */}
+                </div>
               </div>
-              <h3 className="mt-4 lg:text-xl text-lg font-semibold text-gray-900">
-                {service.name}
-              </h3>
-              <p className="mt-2 text-gray-600 lg:text-lg text-sm leading-relaxed">
-                {service.description}
-              </p>
-              <a
-                href={service.link}
-                className="mt-4 inline-block lg:text-lg text-sm font-semibold text-primary hover:underline"
-              >
-                Learn More
-              </a>
             </div>
           ))}
         </div>

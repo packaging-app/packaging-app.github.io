@@ -19,8 +19,8 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-4">
           <Link href="/" className="block h-8 w-fit">
             <Image
-              src="/img/logos/logo-with-title.png"
-              alt="FLM Solutions Logo"
+              src="/img/logos/nimetex-logo.png"
+              alt="Nimetex Groupe Logo"
               width={200}
               height={32}
               className="h-8 w-auto"
@@ -28,9 +28,9 @@ export default function Footer() {
           </Link>
 
           <p className="text-sm max-w-xs mt-2">
-            We guide global brands towards sustainable packaging design & material selection.
-            From eco-design and research to global sourcing and inventory management,
-            we provide end-to-end packaging and visual merchandising solutions.
+            Nimetex Groupe - Confection de vêtements de dessus.
+            Spécialisés dans la production de vêtements de qualité supérieure
+            pour le marché tunisien et international.
           </p>
           <CustomButton>Contact Us</CustomButton>
         </div>
@@ -80,24 +80,38 @@ export default function Footer() {
         <div className="flex gap-6 mt-4 md:mt-0">
           <a
             target="_blank"
-            href="https://www.linkedin.com/company/flm-solutions/"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://nimetexgroupe.com/"
+            className="hover:text-main-blue"
+          >
+            Facebook
+          </a>
+          <a
+            target="_blank"
+            href="https://twitter.com/share?url=https://nimetexgroupe.com/"
+            className="hover:text-main-blue"
+          >
+            Twitter
+          </a>
+          <a
+            target="_blank"
+            href="https://pinterest.com/pin/create/button/?url=https://nimetexgroupe.com/&media=https://nimetexgroupe.com/wp-content/uploads/2020/09/Nimtex01.jpg&description=Nimetex+Groupe+%26%238211%3B+Confection+de+v%C3%AAtements+de+dessus"
+            className="hover:text-main-blue"
+          >
+            Pinterest
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/shareArticle?mini=true&url=https://nimetexgroupe.com/"
             className="hover:text-main-blue"
           >
             LinkedIn
           </a>
           <a
             target="_blank"
-            href="https://www.instagram.com/flm_solutions/"
+            href="https://telegram.me/share/url?url=https://nimetexgroupe.com/"
             className="hover:text-main-blue"
           >
-            Instagram
-          </a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/profile.php?id=100086239284436&fbclid=PAZXh0bgNhZW0CMTEAAacEFAzi99P0r_vGtaW8ZS4-TSlEoAcLtU1WKqBG-pWP6enS9Ag4Cip0gEaoxQ_aem_dv93w4FN06aqoxmgGddAnQ"
-            className="hover:text-main-blue"
-          >
-            Facebook
+            Telegram
           </a>
         </div>
       </div>
