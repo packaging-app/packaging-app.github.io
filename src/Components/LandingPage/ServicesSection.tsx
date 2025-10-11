@@ -1,40 +1,40 @@
 "use client"
 
 import {
-  ChartPieIcon,
-  ComputerDesktopIcon,
-  SquaresPlusIcon,
-  UserGroupIcon,
+  CubeIcon,
+  ShoppingBagIcon,
+  BeakerIcon,
+  GlobeAltIcon,
 } from "@heroicons/react/24/outline";
 
 const services = [
   {
-    name: "Image de Marque",
+    name: "Packaging Solutions",
     description:
-      "Les experts de Flm solutions vous accompagnent dans la réflexion stratégique à propos de l’installation, le développement ou du repositionnement de votre image de marque en Online et en Offline.",
-    icon: ChartPieIcon,
-    link: "/branding",
+      "Comprehensive packaging solutions including paper packaging, textile packaging, cases, jewelry & watch packaging, and e-commerce packaging designed for sustainability and brand impact.",
+    icon: CubeIcon,
+    link: "/packaging",
   },
   {
-    name: "Gestion des relations clients",
+    name: "Visual Merchandising",
     description:
-      "Que ce soit sur votre site, vos réseaux sociaux, votre contact téléphonique, vos points de vente ou votre SAV, nous créons de la valeur à chaque interaction client.",
-    icon: UserGroupIcon,
-    link: "/crm",
+      "Complete visual merchandising solutions including displays, point of purchase materials, travel retail installations, and shop window & backlit panels to enhance brand presence.",
+    icon: ShoppingBagIcon,
+    link: "/visual-merchandising",
   },
   {
-    name: "Digitalisation",
+    name: "Eco Design & R&D",
     description:
-      "Fort de son expertise et de son expérience en solutions innovantes, Flm Solutions accompagne vos projets de digitalisation en relation client, développement commercial et communication.",
-    icon: ComputerDesktopIcon,
-    link: "/digitalization",
+      "In-house research and development focused on sustainable materials, circular design approaches, and innovative packaging solutions that reduce environmental impact.",
+    icon: BeakerIcon,
+    link: "/eco-design",
   },
   {
-    name: "Retail",
+    name: "Global Sourcing",
     description:
-      "Flm Solutions vous aide à moderniser, structurer et développer vos process commerciaux (acquisition, ventes, outils digitaux, etc.) afin d’accélérer votre performance et gagner en croissance.",
-    icon: SquaresPlusIcon,
-    link: "/retail",
+      "Global network of manufacturing partners with transparent supply chains, certified materials, and low-emission transportation methods for sustainable procurement.",
+    icon: GlobeAltIcon,
+    link: "/global-sourcing",
   },
 ];
 
@@ -42,9 +42,9 @@ export default function ServicesSection() {
   return (
     <section className="bg-faint py-16">
       <div className="container mx-auto px-6 lg:px-16 text-center opacity-0 -translate-x-1">
-        <p className="text-blue-600 font-semibold uppercase">Services</p>
+        <p className="text-primary font-semibold uppercase">Our Solutions</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          La meilleure qualité, pour vous
+          Sustainable Packaging & Visual Merchandising
         </h2>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
@@ -53,9 +53,9 @@ export default function ServicesSection() {
               key={service.name}
               className="rounded-2xl bg-white p-8 shadow hover:shadow-lg transition"
             >
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-blue-50">
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <service.icon
-                  className="h-6 w-6 text-blue-600"
+                  className="h-6 w-6 text-primary"
                   aria-hidden="true"
                 />
               </div>
@@ -67,9 +67,9 @@ export default function ServicesSection() {
               </p>
               <a
                 href={service.link}
-                className="mt-4 inline-block lg:text-lg text-sm font-semibold text-blue-600 hover:underline"
+                className="mt-4 inline-block lg:text-lg text-sm font-semibold text-primary hover:underline"
               >
-                Voir plus
+                Learn More
               </a>
             </div>
           ))}

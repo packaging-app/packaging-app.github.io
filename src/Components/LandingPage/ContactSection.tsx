@@ -21,7 +21,7 @@ export default function ContactSection() {
       ></iframe>
 
       {/* Contact Card */}
-      <div className="md:absolute relative md:top-30 md:left-20 top-[700px] left-0 w-[calc(100% - var(--spacing) * 16)] bg-blue-600 text-white md:rounded-3xl p-8 md:w-80 space-y-4 md:shadow-lg">
+      <div className="md:absolute relative md:top-30 md:left-20 top-[700px] left-0 w-[calc(100% - var(--spacing) * 16)] bg-primary text-white md:rounded-3xl p-8 md:w-80 space-y-4 md:shadow-lg">
         <h3 className="text-2xl font-bold">Contacts</h3>
 
         <div className="flex items-start space-x-3">

@@ -8,20 +8,21 @@ interface CustomButtonProps {
 }
 
 export function CustomButton({
-                               children,
-                               isWhite,
-                               onClick,
-                               href
+  children,
+  isWhite,
+  onClick,
+  href
 }: CustomButtonProps) {
   const differentClasses = isWhite
-    ? "border-2 border-main-blue text-main-blue bg-white hover:bg-faint"
-    : "bg-main-blue hover:bg-blue-700 text-white";
+    ? "border-2 bg-white hover:bg-faint"
+    : "text-white";
 
   return (
     <a
-        href={href}
-        className={`md:px-5 px-3 py-2 md:text-md rounded-md shadow-md font-semibold hover:cursor-pointer transition duration-300 w-fit ${differentClasses}`}
-        onClick={onClick}
+      href={href}
+      className={`md:px-5 px-3 py-2 md:text-md rounded-md shadow-md font-semibold hover:cursor-pointer transition duration-300 w-fit ${differentClasses}`}
+      style={isWhite ? { borderColor: '#99b3bdfc', color: '#99b3bdfc' } : { backgroundColor: '#99b3bdfc' }}
+      onClick={onClick}
     >
       {children}
     </a>
