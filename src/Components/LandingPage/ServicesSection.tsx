@@ -8,6 +8,76 @@ import {
   GlobeAltIcon,
 } from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
+interface Service {
+  name: string;
+  description: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  link: string;
+  image: string;
+}
+
+function ServiceCard({ service }: { service: Service }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <div className="rounded-2xl bg-white shadow hover:shadow-lg transition overflow-hidden">
+      <div className="flex">
+        {/* Image on the left */}
+        <div className="w-1/3 relative">
+          <Image
+            src={service.image}
+            alt={service.name}
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Content on the right */}
+        <div className="w-2/3 p-8">
+          <h3 className="lg:text-xl text-lg font-semibold text-gray-900">
+            {service.name}
+          </h3>
+          <div className="mt-2 text-gray-600 lg:text-lg text-sm leading-relaxed">
+            {isExpanded ? (
+              <p>{service.description}</p>
+            ) : (
+              <p
+                className="overflow-hidden"
+                style={{
+                  display: '-webkit-box',
+                  WebkitLineClamp: 3,
+                  WebkitBoxOrient: 'vertical',
+                }}
+              >
+                {service.description}
+              </p>
+            )}
+          </div>
+          <div className="mt-4 flex gap-4">
+            <button
+              onClick={toggleExpanded}
+              className="text-sm font-semibold text-primary hover:underline"
+            >
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
+            <a
+              href={service.link}
+              className="text-sm font-semibold text-primary hover:underline"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function ServicesSection() {
   const { t } = useTranslation("common");
@@ -53,39 +123,7 @@ export default function ServicesSection() {
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2 text-left">
           {services.map((service) => (
-            <div
-              key={service.name}
-              className="rounded-2xl bg-white shadow hover:shadow-lg transition overflow-hidden"
-            >
-              <div className="flex">
-                {/* Image on the left */}
-                <div className="w-1/3 relative">
-                  <Image
-                    src={service.image}
-                    alt={service.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Content on the right */}
-                <div className="w-2/3 p-8">
-
-                  <h3 className="lg:text-xl text-lg font-semibold text-gray-900">
-                    {service.name}
-                  </h3>
-                  <p className="mt-2 text-gray-600 lg:text-lg text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                  {/* <a
-                    href={service.link}
-                    className="mt-4 inline-block lg:text-lg text-sm font-semibold text-primary hover:underline"
-                  >
-                    Learn More
-                  </a> */}
-                </div>
-              </div>
-            </div>
+            <ServiceCard key={service.name} service={service} />
           ))}
         </div>
       </div>

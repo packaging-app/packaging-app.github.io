@@ -150,6 +150,42 @@
             "saturday": "Sam 09.00–12.00"
         }
     },
+    "about": {
+        "hero": {
+            "title": "A propos de",
+            "description": "Nimetex Groupe est un leader dans le domaine de l'emballage durable et des solutions de merchandising visuel. Nous accompagnons les entreprises dans leur transition vers des pratiques plus respectueuses de l'environnement tout en optimisant leur présence en magasin et leur impact commercial.",
+            "cta": "Découvrir Nos Solutions"
+        },
+        "whoWeAre": {
+            "title": "Qui Sommes Nous ?",
+            "description": "Nimetex Groupe est une entreprise tunisienne spécialisée dans l'emballage durable et le merchandising visuel. Basée à Monastir, nous servons des clients à travers l'Afrique du Nord et l'Europe.\n\nNotre expertise couvre l'emballage papier, textile, les solutions e-commerce, le merchandising visuel, l'éco-conception et l'approvisionnement mondial. Nous nous engageons à fournir des solutions durables qui respectent l'environnement tout en maximisant l'impact commercial de nos clients."
+        },
+        "clients": {
+            "title": "Qui Accompagnons Nous ?",
+            "description": "Nous accompagnons depuis près de 10 ans des Start-ups, des TPE, des PME, des Multinationales, ainsi que des ONG dans leurs volontés de mettre en valeur leurs produits ou services, faire évoluer leurs images de marque, générer du revenu supplémentaire.\n\nGrâce à nos experts en retail, en digital, en relation client et en communication, nous agissons à chaque étape du cycle de vie d'un produit ou service pour créer de la valeur en proposant des leviers et des solutions innovantes.",
+            "cta": "Commencer Maintenant"
+        },
+        "strengths": {
+            "subtitle": "Nos Valeurs",
+            "title": "Pourquoi choisir Nimetex Groupe ?",
+            "innovation": {
+                "name": "Innovation Durable",
+                "description": "Nous développons des solutions d'emballage et de merchandising qui respectent l'environnement tout en optimisant l'impact commercial. Notre approche éco-responsable garantit des résultats durables."
+            },
+            "excellence": {
+                "name": "Excellence Opérationnelle",
+                "description": "Notre expertise technique et notre réseau de partenaires mondiaux nous permettent de livrer des solutions de haute qualité avec des délais optimisés et un service client exceptionnel."
+            },
+            "partnership": {
+                "name": "Partnership Client",
+                "description": "Nous nous engageons dans une relation de partenariat à long terme avec nos clients, en comprenant leurs défis spécifiques et en proposant des solutions adaptées à leurs besoins."
+            },
+            "custom": {
+                "name": "Solutions Personnalisées",
+                "description": "Chaque projet est unique. Nous créons des solutions sur mesure qui s'adaptent parfaitement à votre marque, vos produits et vos objectifs commerciaux spécifiques."
+            }
+        }
+    },
     "footer": {
         "description": "Nimetex Groupe - Solutions complètes d'emballage et de merchandising visuel. Spécialisés dans la conception d'emballage durable et la sélection de matériaux pour les marchés tunisien et international.",
         "contactUs": "Contactez-nous",

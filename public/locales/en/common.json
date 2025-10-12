@@ -150,6 +150,42 @@
             "saturday": "Sat 09.00–12.00"
         }
     },
+    "about": {
+        "hero": {
+            "title": "About",
+            "description": "Nimetex Groupe is a leader in sustainable packaging and visual merchandising solutions. We help companies transition to more environmentally friendly practices while optimizing their in-store presence and commercial impact.",
+            "cta": "Discover Our Solutions"
+        },
+        "whoWeAre": {
+            "title": "Who Are We?",
+            "description": "Nimetex Groupe is a Tunisian company specialized in sustainable packaging and visual merchandising. Based in Monastir, we serve clients across North Africa and Europe.\n\nOur expertise covers paper packaging, textile packaging, e-commerce solutions, visual merchandising, eco-design, and global sourcing. We are committed to providing sustainable solutions that respect the environment while maximizing our clients' commercial impact."
+        },
+        "clients": {
+            "title": "Who Do We Serve?",
+            "description": "For nearly 10 years, we have been supporting startups, SMEs, multinationals, and NGOs in their efforts to enhance their products or services, evolve their brand image, and generate additional revenue.\n\nThanks to our experts in retail, digital, customer relations, and communication, we act at every stage of a product or service lifecycle to create value by proposing innovative levers and solutions.",
+            "cta": "Get Started Now"
+        },
+        "strengths": {
+            "subtitle": "Our Values",
+            "title": "Why Choose Nimetex Groupe?",
+            "innovation": {
+                "name": "Sustainable Innovation",
+                "description": "We develop packaging and merchandising solutions that respect the environment while optimizing commercial impact. Our eco-responsible approach ensures sustainable results."
+            },
+            "excellence": {
+                "name": "Operational Excellence",
+                "description": "Our technical expertise and global partner network enable us to deliver high-quality solutions with optimized timelines and exceptional customer service."
+            },
+            "partnership": {
+                "name": "Client Partnership",
+                "description": "We engage in long-term partnership relationships with our clients, understanding their specific challenges and proposing solutions adapted to their needs."
+            },
+            "custom": {
+                "name": "Customized Solutions",
+                "description": "Every project is unique. We create tailor-made solutions that perfectly adapt to your brand, products, and specific commercial objectives."
+            }
+        }
+    },
     "footer": {
         "description": "Nimetex Groupe - Comprehensive packaging and visual merchandising solutions. Specialized in sustainable packaging design and material selection for the Tunisian and international markets.",
         "contactUs": "Contact Us",
