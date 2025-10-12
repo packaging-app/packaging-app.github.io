@@ -3,15 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CustomButton } from "@/Components/Button/CustomButton";
-
-const services = [
-  { name: "Packaging Solutions", href: "/packaging" },
-  { name: "Visual Merchandising", href: "/visual-merchandising" },
-  { name: "Eco Design & R&D", href: "/eco-design" },
-  { name: "Global Sourcing", href: "/global-sourcing" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation("common");
+
+  const services = [
+    { name: t("services.packagingSolutions.name"), href: "/packaging" },
+    { name: t("services.visualMerchandising.name"), href: "/visual-merchandising" },
+    { name: t("services.ecoDesign.name"), href: "/eco-design" },
+    { name: t("services.globalSourcing.name"), href: "/global-sourcing" },
+  ];
+
   return (
     <footer className="bg-faint py-12">
       <div className="mx-auto px-6 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -28,16 +31,16 @@ export default function Footer() {
           </Link>
 
           <p className="text-sm max-w-xs mt-2">
-            Nimetex Groupe - Confection de vêtements de dessus.
-            Spécialisés dans la production de vêtements de qualité supérieure
-            pour le marché tunisien et international.
+            {t("footer.description")}
           </p>
-          <CustomButton>Contact Us</CustomButton>
+          <div className="pt-2">
+            <CustomButton>{t("footer.contactUs")}</CustomButton>
+          </div>
         </div>
 
         {/* Product */}
         <div>
-          <h4 className="font-semibold mb-4">Services</h4>
+          <h4 className="font-semibold mb-4">{t("footer.services")}</h4>
           <ul className="space-y-2 text-sm">
             {services.map((item) => (
               <li key={item.name}>
@@ -51,21 +54,21 @@ export default function Footer() {
 
         {/* Company */}
         <div>
-          <h4 className="font-semibold mb-4">Company</h4>
+          <h4 className="font-semibold mb-4">{t("footer.company")}</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/" className="hover:text-main-blue">
-                Home
+                {t("footer.home")}
               </Link>
             </li>
             <li>
               <Link href="/about" className="hover:text-main-blue">
-                About
+                {t("footer.about")}
               </Link>
             </li>
             <li>
               <Link href="/contact" className="hover:text-main-blue">
-                Contact
+                {t("footer.contact")}
               </Link>
             </li>
           </ul>
@@ -75,7 +78,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="mt-12 border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm px-6 lg:px-16">
         <p>
-          © {new Date().getFullYear()} Packaging & Visual Merchandising Solutions. All rights reserved.
+          {t("footer.copyright", { year: new Date().getFullYear() })}
         </p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <a

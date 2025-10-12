@@ -8,8 +8,8 @@ import NavBar from "@/Components/Navigation/NavBar";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import Footer from "@/Components/Navigation/Footer";
 import ReservationSection from "@/Components/LandingPage/ReservationSection";
-
 export default function EcoDesignServicePage() {
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
         scrollAnimator();
@@ -18,12 +18,12 @@ export default function EcoDesignServicePage() {
     const definitionParams: DefinitionSectionProps = {
         title: "What is Eco Design & R&D?",
         description: [
-            "Eco Design & R&D focuses on developing sustainable materials and circular design approaches that minimize environmental impact throughout the product lifecycle. Our research drives innovation in sustainable packaging solutions.",
-            "We conduct in-house research and development to create innovative packaging materials and design approaches that reduce environmental impact while maintaining functionality and aesthetic appeal.",
-            "From biodegradable materials to circular design principles, our R&D team works continuously to push the boundaries of sustainable packaging innovation and help brands achieve their environmental goals.",
+            "Eco-design and R&D services focused on developing sustainable packaging solutions that minimize environmental impact while maximizing functionality and brand appeal.",
+            "Our research and development team works closely with clients to create innovative packaging designs that meet both environmental standards and business objectives.",
+            "From concept to production, we provide comprehensive eco-design services that help brands achieve their sustainability goals while maintaining product quality and market competitiveness.",
         ],
-        rightImage: "/img/digitalization/d-l.jpg",
-        leftImage: "/img/digitalization/d-r.jpg",
+        rightImage: "/img/digitalization/1.png",
+        leftImage: "/img/digitalization/2.webp",
     };
 
     const interventionFields: InterventionField[] = [
@@ -32,23 +32,23 @@ export default function EcoDesignServicePage() {
             fieldIcon: "/img/digitalization/1.png",
         },
         {
-            fieldName: "Circular Design Development",
+            fieldName: "Eco-Friendly Design",
             fieldIcon: "/img/digitalization/2.webp",
         },
         {
-            fieldName: "Biodegradable Solutions",
+            fieldName: "Life Cycle Assessment",
             fieldIcon: "/img/digitalization/3.jpg",
         },
         {
-            fieldName: "Life Cycle Assessment",
+            fieldName: "Biodegradable Solutions",
             fieldIcon: "/img/digitalization/4.jpeg",
         },
         {
-            fieldName: "Innovation Testing",
+            fieldName: "Recyclable Packaging",
             fieldIcon: "/img/digitalization/5.jpg",
         },
         {
-            fieldName: "Sustainability Consulting",
+            fieldName: "Carbon Footprint Analysis",
             fieldIcon: "/img/digitalization/6.png",
         },
     ];
@@ -64,8 +64,7 @@ export default function EcoDesignServicePage() {
                             Eco Design & R&D
                         </h1>
                         <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
-                            In-house research and development focused on sustainable materials, circular design approaches,
-                            and innovative packaging solutions that reduce environmental impact.
+                            Sustainable packaging solutions through innovative eco-design and research & development services that prioritize environmental impact.
                         </p>
                         <CustomButton href={"/contact"} >Get Started</CustomButton>
                     </div>
@@ -73,7 +72,7 @@ export default function EcoDesignServicePage() {
                     {/* Right Image */}
                     <div className="flex max-w-[800px] max-h-[500px] h-full w-full justify-end ">
                         <img
-                            src="/img/digitalization/h.png"
+                            src="/img/digitalization/1.png"
                             className="max-h-[500px] h-full "
                             alt="Eco Design & R&D"
                         />

@@ -4,8 +4,8 @@ import NavBar from "@/Components/Navigation/NavBar";
 import React from "react";
 import scrollAnimator from "@/Context/Animation/AnimationService";
 import Footer from "@/Components/Navigation/Footer";
-
 export default function ContactPage() {
+
     React.useEffect(() => {
         scrollAnimator();
     }, []);

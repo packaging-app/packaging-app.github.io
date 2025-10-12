@@ -3,63 +3,66 @@
 import Image from "next/image";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import FloatingCard from "./FloatingCard";
-
-const packagingTypes = [
-    {
-        name: "Paper Packaging",
-        image: "/img/packaging/paper-packaging.webp",
-        description: "Sustainable paper-based packaging solutions",
-        color: "from-blue-50 to-blue-100",
-        icon: "📄"
-    },
-    {
-        name: "Textile Packaging",
-        image: "/img/packaging/textile-packaging.webp",
-        description: "Eco-friendly textile packaging options",
-        color: "from-green-50 to-green-100",
-        icon: "🧵"
-    },
-    {
-        name: "Cases",
-        image: "/img/packaging/cases.webp",
-        description: "Protective cases for various products",
-        color: "from-gray-50 to-gray-100",
-        icon: "💼"
-    },
-    {
-        name: "Jewellery & Watch Packaging",
-        image: "/img/packaging/jewellery-watch.webp",
-        description: "Luxury packaging for jewelry and watches",
-        color: "from-purple-50 to-purple-100",
-        icon: "💎"
-    },
-    {
-        name: "E-commerce Packaging",
-        image: "/img/packaging/ecommerce-packaging.webp",
-        description: "Optimized packaging for online retail",
-        color: "from-orange-50 to-orange-100",
-        icon: "📦"
-    },
-    {
-        name: "Luxury Gift Packaging",
-        image: "/img/packaging/luxury-gift.webp", // Using e-commerce image as placeholder
-        description: "Premium gift packaging for special occasions",
-        color: "from-pink-50 to-pink-100",
-        icon: "🎁"
-    }
-];
+import { useTranslation } from "react-i18next";
 
 export default function PackagingShowcaseSection() {
+    const { t } = useTranslation("common");
+
+    const packagingTypes = [
+        {
+            name: t("packaging.paperPackaging.name"),
+            image: "/img/packaging/paper-packaging.webp",
+            description: t("packaging.paperPackaging.description"),
+            color: "from-blue-50 to-blue-100",
+            icon: "📄"
+        },
+        {
+            name: t("packaging.textilePackaging.name"),
+            image: "/img/packaging/textile-packaging.webp",
+            description: t("packaging.textilePackaging.description"),
+            color: "from-green-50 to-green-100",
+            icon: "🧵"
+        },
+        {
+            name: t("packaging.cases.name"),
+            image: "/img/packaging/cases.webp",
+            description: t("packaging.cases.description"),
+            color: "from-gray-50 to-gray-100",
+            icon: "💼"
+        },
+        {
+            name: t("packaging.jewelleryWatch.name"),
+            image: "/img/packaging/jewellery-watch.webp",
+            description: t("packaging.jewelleryWatch.description"),
+            color: "from-purple-50 to-purple-100",
+            icon: "💎"
+        },
+        {
+            name: t("packaging.ecommerce.name"),
+            image: "/img/packaging/ecommerce-packaging.webp",
+            description: t("packaging.ecommerce.description"),
+            color: "from-orange-50 to-orange-100",
+            icon: "📦"
+        },
+        {
+            name: t("packaging.luxuryGift.name"),
+            image: "/img/packaging/luxury-gift.webp", // Using e-commerce image as placeholder
+            description: t("packaging.luxuryGift.description"),
+            color: "from-pink-50 to-pink-100",
+            icon: "🎁"
+        }
+    ];
+
     return (
-        <section className="py-20 bg-gradient-to-br from-gray-50 to-primary/5">
+        <section className="py-10 bg-gradient-to-br from-gray-50 to-primary/5">
             <div className="container mx-auto px-6 lg:px-16">
                 <div className="text-center mb-16 opacity-0 -translate-x-1">
-                    <p className="text-primary font-semibold uppercase tracking-wider">Our Solutions</p>
+                    <p className="text-primary font-semibold uppercase tracking-wider">{t("packaging.subtitle")}</p>
                     <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Packaging Solutions
+                        {t("packaging.title")}
                     </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive packaging solutions designed for sustainability and brand impact
+                        {t("packaging.description")}
                     </p>
                 </div>
 
@@ -121,7 +124,7 @@ export default function PackagingShowcaseSection() {
                 <div className="text-center opacity-0 -translate-y-4">
                     <div className="inline-block group relative overflow-hidden">
                         <CustomButton href="/contact">
-                            <span className="relative z-10">Find Out More</span>
+                            <span className="relative z-10">{t("packaging.cta")}</span>
                         </CustomButton>
                         <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-lg"></div>
                     </div>

@@ -6,8 +6,11 @@ import {
   EnvelopeIcon,
   ClockIcon,
 } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="relative bg-faint w-full md:h-[700px] h-[1020px] ">
       {/* Google Map */}
@@ -21,31 +24,31 @@ export default function ContactSection() {
       ></iframe>
 
       {/* Contact Card */}
-      <div className="md:absolute relative md:top-30 md:right-20 top-[700px] left-0 w-[calc(100% - var(--spacing) * 16)] bg-white text-gray-800 md:rounded-3xl p-8 md:w-80 space-y-4 shadow-xl border border-gray-200 mt-6">
-        <h3 className="text-2xl font-bold">Contacts</h3>
+      <div className="absolute top-8 right-4 md:top-30 md:right-20 w-[calc(100%-2rem)] md:w-80 bg-white text-gray-800 rounded-3xl p-6 md:p-8 space-y-4 shadow-xl border border-gray-200 z-10">
+        <h3 className="text-2xl font-bold">{t("contact.title")}</h3>
 
         <div className="flex items-start space-x-3">
           <MapPinIcon className="h-6 w-6 flex-shrink-0" />
           <p className="text-sm leading-relaxed">
-            Neopark de Monastir LOT 46P – Route de Sahline, Manzel Harb 5036
+            {t("contact.address")}
           </p>
         </div>
 
         <div className="flex items-center space-x-3">
           <PhoneIcon className="h-6 w-6 flex-shrink-0" />
-          <p className="text-sm">+216 31 107 375</p>
+          <p className="text-sm">{t("contact.phone")}</p>
         </div>
 
         <div className="flex items-center space-x-3">
           <EnvelopeIcon className="h-6 w-6 flex-shrink-0" />
-          <p className="text-sm">commercial@nimetex.com</p>
+          <p className="text-sm">{t("contact.email")}</p>
         </div>
 
         <div className="flex items-start space-x-3">
           <ClockIcon className="h-6 w-6 flex-shrink-0" />
           <div className="text-sm leading-relaxed">
-            <p>Mon–Fri 08.00–17.00</p>
-            <p>Sat 09.00–12.00</p>
+            <p>{t("contact.hours.weekdays")}</p>
+            <p>{t("contact.hours.saturday")}</p>
           </div>
         </div>
       </div>

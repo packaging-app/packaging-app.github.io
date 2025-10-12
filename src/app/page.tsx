@@ -16,26 +16,25 @@ import CertificationsSection from "@/Components/LandingPage/CertificationsSectio
 // import PartnersSection from "@/Components/LandingPage/PartnersSection";
 
 export default function Home() {
+    React.useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+        scrollAnimator();
+    }, []);
 
-  React.useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
-    scrollAnimator();
-  }, []);
-
-  return (
-    <>
-      <NavBar />
-      <HeroSection />
-      <IntroductionSection />
-      <ServicesSection />
-      <PackagingShowcaseSection />
-      <VisualMerchandisingSection />
-      {/* <SustainabilitySection /> */}
-      <CertificationsSection />
-      {/* <PartnersSection /> */}
-      <ReservationSection />
-      <ContactSection />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <NavBar />
+            <HeroSection />
+            <IntroductionSection />
+            <ServicesSection />
+            <PackagingShowcaseSection />
+            <VisualMerchandisingSection />
+            {/* <SustainabilitySection /> */}
+            <CertificationsSection />
+            {/* <PartnersSection /> */}
+            <ReservationSection />
+            <ContactSection />
+            <Footer />
+        </>
+    );
 }

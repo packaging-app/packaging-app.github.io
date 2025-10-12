@@ -1,23 +1,26 @@
 "use client"
 
 import { CustomButton } from "@/Components/Button/CustomButton";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
+  const { t } = useTranslation("common");
+
   return (
     <section className="bg-faint md:pt-20 pt-8 pb-20">
-      <div className="w-full flex flex-col gap-10 md:flex-row items-center justify-evenly px-6 lg:px-10 opacity-0 -translate-x-1">
+      <div className="container mx-auto w-full flex flex-col gap-10 md:flex-row items-center justify-evenly px-6 lg:px-10 opacity-0 -translate-x-1">
         {/* Left Content */}
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full">
           <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold text-gray-900 leading-snug">
-            Packaging & <br />
-            Visual Merchandising <span style={{ color: '#94b0b9' }}>Solutions</span>
+            {t("hero.title")} <br />
+            {t("hero.titleHighlight")} <span style={{ color: '#94b0b9' }}>{t("hero.subtitle")}</span>
           </h1>
           <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
-            We guide global brands towards sustainable packaging design & material selection.
-            From eco-design and research to global sourcing and inventory management,
-            we provide end-to-end packaging and visual merchandising solutions.
+            {t("hero.description")}
           </p>
-          <CustomButton href={"/contact"}>Get Started</CustomButton>
+
+          <CustomButton href={"/contact"}>{t("hero.cta")}</CustomButton>
+
         </div>
 
         {/* Right Images */}

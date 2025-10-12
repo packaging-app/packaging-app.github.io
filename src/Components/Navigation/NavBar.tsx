@@ -23,29 +23,28 @@ import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/Context/Language/LanguageContext";
 
-const services = [
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const getServices = (t: any) => [
   {
-    name: "Packaging Solutions",
-    description: "Sustainable packaging design & material selection",
+    name: t("services.packagingSolutions.name"),
     href: "/packaging",
     icon: CubeIcon,
   },
   {
-    name: "Visual Merchandising",
-    description: "Complete visual merchandising solutions",
+    name: t("services.visualMerchandising.name"),
     href: "/visual-merchandising",
     icon: ShoppingBagIcon,
   },
   {
-    name: "Eco Design & R&D",
-    description: "Sustainable materials & circular design",
+    name: t("services.ecoDesign.name"),
     href: "/eco-design",
     icon: BeakerIcon,
   },
   {
-    name: "Global Sourcing",
-    description: "Global network of manufacturing partners",
+    name: t("services.globalSourcing.name"),
     href: "/global-sourcing",
     icon: GlobeAltIcon,
   },
@@ -53,6 +52,14 @@ const services = [
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
+  const { locale, setLocale } = useLanguage();
+  const { t } = useTranslation();
+
+  const services = getServices(t);
+
+  const switchLanguage = (newLocale: string) => {
+    setLocale(newLocale);
+  };
 
   return (
     <header className="bg-faint">
@@ -75,7 +82,28 @@ export default function NavBar() {
           </a>
         </div>
 
-        <div className="flex lg:hidden">
+        <div className="flex lg:hidden items-center gap-3">
+          {/* Mobile Language Switcher */}
+          <div className="flex items-center gap-1 bg-white rounded-lg p-1 shadow-sm border border-gray-200">
+            <button
+              onClick={() => switchLanguage('fr')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 ${locale === 'fr'
+                ? 'bg-primary text-white'
+                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
+                }`}
+            >
+              FR
+            </button>
+            <button
+              onClick={() => switchLanguage('en')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 ${locale === 'en'
+                ? 'bg-primary text-white'
+                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
+                }`}
+            >
+              EN
+            </button>
+          </div>
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -88,14 +116,14 @@ export default function NavBar() {
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Link href="/" className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300">
-            Home
+            {t("footer.home")}
           </Link>
           <Link href="/about" className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300">
-            About
+            {t("footer.about")}
           </Link>
           <Popover className="relative">
             <PopoverButton className="focus:outline-none focus:ring-0 flex items-center gap-x-1 text-sm/6 font-semibold cursor-pointer text-gray-900 hover:text-primary transition-colors duration-300">
-              Services
+              {t("footer.services")}
               <ChevronDownIcon
                 aria-hidden="true"
                 className="size-5 flex-none text-gray-900 group-data-[open]:rotate-180 transition-transform duration-300"
@@ -106,11 +134,11 @@ export default function NavBar() {
               transition
               className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-2xl bg-white shadow-2xl border border-gray-100 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
             >
-              <div className="p-6">
+              <div className="p-1">
                 {services.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-4 rounded-xl p-4 text-sm/6 hover:bg-primary/5 transition-all duration-300"
+                    className="group relative flex items-center gap-x-4 rounded-xl p-2 text-sm/6 hover:bg-primary/5 transition-all duration-300"
                   >
                     <div className="flex size-12 flex-none items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary transition-all duration-300" style={{ backgroundColor: 'rgba(148, 176, 185, 0.1)' }}>
                       <item.icon
@@ -123,7 +151,7 @@ export default function NavBar() {
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      <p className="mt-1 text-gray-600 text-sm">{item.description}</p>
+
                     </div>
                   </div>
                 ))}
@@ -137,14 +165,35 @@ export default function NavBar() {
                     aria-hidden="true"
                     className="size-5 flex-none text-white"
                   />
-                  Contact us
+                  {t("footer.contactUs")}
                 </a>
               </div>
             </PopoverPanel>
           </Popover>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <CustomButton isWhite={true} href={"/contact"}>Contact Us</CustomButton>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
+          {/* Language Switcher */}
+          <div className="flex items-center gap-1 bg-white rounded-lg p-1 shadow-sm border border-gray-200">
+            <button
+              onClick={() => switchLanguage('fr')}
+              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${locale === 'fr'
+                ? 'bg-primary text-white'
+                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
+                }`}
+            >
+              🇫🇷 FR
+            </button>
+            <button
+              onClick={() => switchLanguage('en')}
+              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${locale === 'en'
+                ? 'bg-primary text-white'
+                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
+                }`}
+            >
+              🇬🇧 EN
+            </button>
+          </div>
+          <CustomButton isWhite={true} href={"/contact"}>{t("footer.contactUs")}</CustomButton>
         </div>
         <Dialog
           open={mobileMenuOpen}
@@ -152,7 +201,7 @@ export default function NavBar() {
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-faint p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10" style={{ backgroundColor: '#f8f9fa' }}>
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -176,7 +225,7 @@ export default function NavBar() {
                 <div className="space-y-2 py-6">
                   <Disclosure as="div" className="-mx-3">
                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold hover:bg-white/5">
-                      Services
+                      {t("footer.services")}
                       <ChevronDownIcon
                         aria-hidden="true"
                         className="size-5 flex-none group-data-open:rotate-180"
@@ -199,17 +248,17 @@ export default function NavBar() {
                     href="/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-white/5"
                   >
-                    Home
+                    {t("footer.home")}
                   </Link>
-                  <a
+                  <Link
                     href="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-white/5"
                   >
-                    About
-                  </a>
+                    {t("footer.about")}
+                  </Link>
                 </div>
                 <div className="py-6">
-                  <CustomButton href={"/contact"}>Contact Us</CustomButton>
+                  <CustomButton href={"/contact"}>{t("footer.contactUs")}</CustomButton>
                 </div>
               </div>
             </div>

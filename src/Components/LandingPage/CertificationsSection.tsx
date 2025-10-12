@@ -1,45 +1,48 @@
 "use client"
 
 import { ShieldCheckIcon, HeartIcon, UsersIcon, ScaleIcon } from "@heroicons/react/24/outline";
-
-const values = [
-  {
-    icon: ShieldCheckIcon,
-    title: "SA8000 Certifié",
-    description: "Standard de responsabilité sociétale depuis 2020"
-  },
-  {
-    icon: HeartIcon,
-    title: "Engagement Éthique",
-    description: "Sélection rigoureuse de nos partenaires commerciaux"
-  },
-  {
-    icon: UsersIcon,
-    title: "Conditions de Travail",
-    description: "Respect des droits et dignité de chaque travailleur"
-  },
-  {
-    icon: ScaleIcon,
-    title: "Législations Sociales",
-    description: "Respect strict des normes sociales en vigueur"
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export default function CertificationsSection() {
+  const { t } = useTranslation("common");
+
+  const values = [
+    {
+      icon: ShieldCheckIcon,
+      title: t("certifications.sa8000.title"),
+      description: t("certifications.sa8000.description")
+    },
+    {
+      icon: HeartIcon,
+      title: t("certifications.ethical.title"),
+      description: t("certifications.ethical.description")
+    },
+    {
+      icon: UsersIcon,
+      title: t("certifications.workingConditions.title"),
+      description: t("certifications.workingConditions.description")
+    },
+    {
+      icon: ScaleIcon,
+      title: t("certifications.socialLegislation.title"),
+      description: t("certifications.socialLegislation.description")
+    }
+  ];
+
   return (
-    <section className="py-20 bg-gray-50">
+    <section className=" bg-gray-50">
       <div className="container mx-auto px-6 lg:px-16">
-        <div className="text-center mb-16 opacity-0 -translate-x-1">
-          <p className="text-primary font-semibold uppercase">Certifications & Responsabilité</p>
+        {/* <div className="text-center mb-16 opacity-0 -translate-x-1">
+          <p className="text-primary font-semibold uppercase">{t("certifications.subtitle")}</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Notre Engagement Social
+            {t("certifications.title")}
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Chez NIMETEX GROUPE, nous attachons une grande importance au respect des législations sociales en vigueur.
+            {t("certifications.description")}
           </p>
-        </div>
+        </div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {values.map((value, index) => (
             <div key={index} className="text-center opacity-0 -translate-x-1">
               <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow h-full">
@@ -55,7 +58,7 @@ export default function CertificationsSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-16 opacity-0 -translate-x-1">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
@@ -83,10 +86,10 @@ export default function CertificationsSection() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900">
-                        Certification SA8000
+                        {t("certifications.certificationTitle")}
                       </h3>
                       <p className="text-lg text-primary font-semibold">
-                        Depuis 2020 - Standard de Responsabilité Sociétale
+                        {t("certifications.certificationSubtitle")}
                       </p>
                     </div>
                   </div>
@@ -94,25 +97,20 @@ export default function CertificationsSection() {
 
                 <div className="space-y-6 text-gray-700">
                   <p>
-                    Nous sélectionnons nos partenaires commerciaux en fonction de leur engagement éthique,
-                    partageant ainsi notre vision d&apos;une production responsable.
+                    {t("certifications.certificationDescription1")}
                   </p>
 
                   <p>
-                    Le SA8000 est un code de conduite exigeant qui place les aspects sociaux au cœur du
-                    développement durable, et nous nous engageons à le respecter avec rigueur.
+                    {t("certifications.certificationDescription2")}
                   </p>
 
                   <p>
-                    En choisissant NIMETEX GROUPE, nos clients peuvent être assurés que leurs produits
-                    sont fabriqués dans le respect des normes éthiques et sociales les plus strictes,
-                    tout en préservant les droits et la dignité de chaque travailleur.
+                    {t("certifications.certificationDescription3")}
                   </p>
 
                   <div className="bg-primary/5 rounded-xl p-6 mt-8">
                     <p className="text-center font-semibold text-primary">
-                      Nous sommes heureux de promouvoir une ligne productive déontologique,
-                      et en harmonie avec nos valeurs et notre engagement la société.
+                      {t("certifications.certificationQuote")}
                     </p>
                   </div>
                 </div>

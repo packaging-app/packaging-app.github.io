@@ -8,8 +8,8 @@ import NavBar from "@/Components/Navigation/NavBar";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import Footer from "@/Components/Navigation/Footer";
 import ReservationSection from "@/Components/LandingPage/ReservationSection";
-
 export default function GlobalSourcingServicePage() {
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
         scrollAnimator();
@@ -28,27 +28,27 @@ export default function GlobalSourcingServicePage() {
 
     const interventionFields: InterventionField[] = [
         {
-            fieldName: "Manufacturing Partnerships",
+            fieldName: "Supply Chain Management",
             fieldIcon: "/img/crm/1.jpg",
         },
         {
-            fieldName: "Supply Chain Management",
+            fieldName: "Quality Assurance",
             fieldIcon: "/img/crm/2.png",
         },
         {
-            fieldName: "Material Certification",
+            fieldName: "Sustainable Materials",
             fieldIcon: "/img/crm/3.jpg",
         },
         {
-            fieldName: "Quality Assurance",
+            fieldName: "Cost Optimization",
             fieldIcon: "/img/crm/4.png",
         },
         {
-            fieldName: "Sustainable Transportation",
+            fieldName: "Vendor Management",
             fieldIcon: "/img/crm/5.webp",
         },
         {
-            fieldName: "Global Logistics",
+            fieldName: "Compliance & Certification",
             fieldIcon: "/img/crm/6.jpeg",
         },
     ];
@@ -64,8 +64,7 @@ export default function GlobalSourcingServicePage() {
                             Global Sourcing
                         </h1>
                         <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
-                            Global network of manufacturing partners with transparent supply chains, certified materials,
-                            and low-emission transportation methods for sustainable procurement.
+                            Comprehensive global sourcing solutions that connect you with certified suppliers worldwide, ensuring quality, sustainability, and cost-effectiveness.
                         </p>
                         <CustomButton href={"/contact"} >Get Started</CustomButton>
                     </div>
@@ -73,7 +72,7 @@ export default function GlobalSourcingServicePage() {
                     {/* Right Image */}
                     <div className="flex max-w-[800px] max-h-[500px] h-full w-full justify-end ">
                         <img
-                            src="/img/crm/h-bl.png"
+                            src="/img/crm/d-l.png"
                             className="max-h-[500px] h-full "
                             alt="Global Sourcing"
                         />

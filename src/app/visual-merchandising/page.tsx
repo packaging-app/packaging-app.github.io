@@ -8,8 +8,8 @@ import NavBar from "@/Components/Navigation/NavBar";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import Footer from "@/Components/Navigation/Footer";
 import ReservationSection from "@/Components/LandingPage/ReservationSection";
-
 export default function VisualMerchandisingServicePage() {
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
         scrollAnimator();
@@ -32,23 +32,23 @@ export default function VisualMerchandisingServicePage() {
             fieldIcon: "/img/retail/1.webp",
         },
         {
-            fieldName: "Point of Purchase Materials",
+            fieldName: "Point of Purchase",
             fieldIcon: "/img/retail/2.jpg",
         },
         {
-            fieldName: "Travel Retail Installations",
+            fieldName: "Window Displays",
             fieldIcon: "/img/retail/3.jpg",
         },
         {
-            fieldName: "Shop Window Displays",
+            fieldName: "Backlit Panels",
             fieldIcon: "/img/retail/4.jpg",
         },
         {
-            fieldName: "Backlit Panels",
+            fieldName: "Travel Retail",
             fieldIcon: "/img/retail/5.jpg",
         },
         {
-            fieldName: "Interactive Displays",
+            fieldName: "Shop-in-Shop",
             fieldIcon: "/img/retail/6.jpg",
         },
     ];
@@ -64,8 +64,7 @@ export default function VisualMerchandisingServicePage() {
                             Visual Merchandising
                         </h1>
                         <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
-                            Complete visual merchandising solutions including displays, point of purchase materials,
-                            travel retail installations, and shop window & backlit panels to enhance brand presence.
+                            Transform retail spaces with innovative visual merchandising solutions including displays, point-of-purchase materials, and retail installations.
                         </p>
                         <CustomButton href={"/contact"} >Get Started</CustomButton>
                     </div>

@@ -8,8 +8,8 @@ import NavBar from "@/Components/Navigation/NavBar";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import ReservationSection from "@/Components/LandingPage/ReservationSection";
 import Footer from "@/Components/Navigation/Footer";
-
 export default function PackagingServicePage() {
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
         scrollAnimator();
