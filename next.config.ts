@@ -1,13 +1,12 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === 'production';
-
+// Force basePath and assetPrefix for GitHub Pages deployment branch
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
 
-  basePath: isProd ? '/website' : '',
-  assetPrefix: isProd ? '/website/' : '',
+  basePath: '/website',
+  assetPrefix: '/website/',
   images: {
     unoptimized: true
   },
