@@ -1,6 +1,7 @@
 "use client"
 
 import { CustomButton } from "@/Components/Button/CustomButton";
+import { BASE_PATH } from "@/lib/basePath";
 
 export default function IntroductionSection() {
   return (
@@ -10,14 +11,14 @@ export default function IntroductionSection() {
         <div className="grid grid-cols-7 grid-rows-10 items-end max-w-[800px] max-h-[400px] gap-4">
           <div className="col-start-1 col-end-5 row-start-1 row-end-4 h-full w-full overflow-hidden rounded-tl-[50px] rounded-br-[50px]">
             <img
-              src="/img/lp-i-t.png"
+              src={`${BASE_PATH}/img/lp-i-t.png`}
               alt="Whiteboard presentation"
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
           <div className="col-start-1 col-end-8 row-start-4 row-end-11 h-full w-full overflow-hidden rounded-md rounded-tr-[80px] rounded-bl-[80px] flex items-center">
             <img
-              src="/img/luxury-chocolate.jpg"
+              src={`${BASE_PATH}/img/luxury-chocolate.jpg`}
               alt="Team meeting"
               className="object-cover min-w-full min-h-full shadow-md"
             />

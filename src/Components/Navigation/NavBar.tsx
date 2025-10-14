@@ -23,6 +23,7 @@ import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Link from "next/link";
+import { BASE_PATH } from "@/lib/basePath";
 
 const services = [
   {
@@ -64,12 +65,12 @@ export default function NavBar() {
           <a href={"/"} className="-m-1.5 p-1.5">
             <img
               alt="FML Logo"
-              src="/img/logos/logo-no-title.png"
+              src={`${BASE_PATH}/img/logos/logo-no-title.png`}
               className="h-8 w-auto lg:hidden"
             />
             <img
               alt="FML Logo"
-              src="/img/logos/logo-with-title.png"
+              src={`${BASE_PATH}/img/logos/logo-with-title.png`}
               className="h-8 w-auto lg:block hidden"
             />
           </a>
@@ -158,7 +159,7 @@ export default function NavBar() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="/img/logos/logo-no-title.png"
+                  src={`${BASE_PATH}/img/logos/logo-no-title.png`}
                   className="h-8 w-auto"
                 />
               </a>

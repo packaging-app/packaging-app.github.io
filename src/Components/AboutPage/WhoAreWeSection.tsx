@@ -1,3 +1,7 @@
+"use client";
+
+import { BASE_PATH } from "@/lib/basePath";
+
 export default function WhoAreWeSection() {
   return (
     <section className="py-20 opacity-0 -translate-x-1">
@@ -5,9 +9,9 @@ export default function WhoAreWeSection() {
         {/* Left Images */}
         <div className="overflow-hidden rounded-tl-[50px] rounded-br-[50px]">
           <img
-            src="/img/ap-w.png"
-            alt="Whiteboard presentation"
-            className="object-cover shadow-md min-w-full min-h-full"
+            src={`${BASE_PATH}/img/ap-w.png`}
+            alt="About us"
+            className="w-full h-full object-cover"
           />
         </div>
 

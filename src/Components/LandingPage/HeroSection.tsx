@@ -1,6 +1,7 @@
 "use client"
 
 import { CustomButton } from "@/Components/Button/CustomButton";
+import { BASE_PATH } from "@/lib/basePath";
 
 export default function HeroSection() {
   return (
@@ -24,23 +25,23 @@ export default function HeroSection() {
         <div className="grid grid-cols-7 grid-rows-6 items-end max-w-[800px] max-h-[500px] gap-4">
           <div className="col-start-5 col-end-8 row-start-1 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[80px] rounded-br-[80px]">
             <img
-              src="/img/packaging/textile-packaging.webp"
-              alt="Paper packaging solutions"
-              className="object-cover min-w-full min-h-full shadow-md"
+              src={`${BASE_PATH}/img/packaging/textile-packaging.webp`}
+              alt="Textile packaging"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="col-start-1 col-end-5 row-start-5 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[50px] rounded-br-[50px] flex items-center">
             <img
-              src="/img/packaging/ecommerce-packaging.webp"
-              alt="Textile packaging solutions"
-              className="object-cover min-w-full min-h-full shadow-md"
+              src={`${BASE_PATH}/img/packaging/ecommerce-packaging.webp`}
+              alt="Ecommerce packaging"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="col-start-3 col-end-5 row-start-2 row-end-5 h-full w-full overflow-hidden rounded-[40px]">
             <img
-              src="/img/packaging/paper-packaging.webp"
-              alt="Protective cases packaging"
-              className="object-cover min-w-full min-h-full shadow-md"
+              src={`${BASE_PATH}/img/packaging/paper-packaging.webp`}
+              alt="Paper packaging"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="col-start-1 col-end-3 row-start-4 row-end-5 h-full w-full rounded-md rounded-tl-[50px] rounded-br-[50px]" style={{ backgroundColor: '#c8b2a2' }}></div>

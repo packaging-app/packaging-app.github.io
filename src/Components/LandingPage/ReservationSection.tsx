@@ -1,6 +1,7 @@
 "use client"
 
 import { CustomButton } from "@/Components/Button/CustomButton";
+import { BASE_PATH } from "@/lib/basePath";
 
 export default function ReservationSection() {
   return (
@@ -27,14 +28,14 @@ export default function ReservationSection() {
         <div className="grid grid-cols-6 grid-rows-7 items-end max-w-[700px] max-h-[400px] gap-4">
           <div className="col-start-4 col-end-7 row-start-1 row-end-8 h-full w-full overflow-hidden rounded-full">
             <img
-              src="/img/lp-r-r.png"
+              src={`${BASE_PATH}/img/lp-r-r.png`}
               alt="Professionals handshake"
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
           <div className="col-start-1 col-end-4 row-start-4 row-end-8 h-full w-full overflow-hidden rounded-md rounded-tr-[120px] rounded-bl-[120px]">
             <img
-              src="/img/lp-r-l.png"
+              src={`${BASE_PATH}/img/lp-r-l.png`}
               alt="Whiteboard presentation"
               className="object-cover min-w-full min-h-full shadow-md"
             />

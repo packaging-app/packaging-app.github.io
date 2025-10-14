@@ -3,46 +3,47 @@
 import Image from "next/image";
 import { CustomButton } from "@/Components/Button/CustomButton";
 import FloatingCard from "./FloatingCard";
+import { BASE_PATH } from "@/lib/basePath";
 
 const packagingTypes = [
     {
         name: "Paper Packaging",
-        image: "/img/packaging/paper-packaging.webp",
+        image: `${BASE_PATH}/img/packaging/paper-packaging.webp`,
         description: "Sustainable paper-based packaging solutions",
         color: "from-blue-50 to-blue-100",
         icon: "📄"
     },
     {
         name: "Textile Packaging",
-        image: "/img/packaging/textile-packaging.webp",
+        image: `${BASE_PATH}/img/packaging/textile-packaging.webp`,
         description: "Eco-friendly textile packaging options",
         color: "from-green-50 to-green-100",
         icon: "🧵"
     },
     {
         name: "Cases",
-        image: "/img/packaging/cases.webp",
+        image: `${BASE_PATH}/img/packaging/cases.webp`,
         description: "Protective cases for various products",
         color: "from-gray-50 to-gray-100",
         icon: "💼"
     },
     {
         name: "Jewellery & Watch Packaging",
-        image: "/img/packaging/jewellery-watch.webp",
+        image: `${BASE_PATH}/img/packaging/jewellery-watch.webp`,
         description: "Luxury packaging for jewelry and watches",
         color: "from-purple-50 to-purple-100",
         icon: "💎"
     },
     {
         name: "E-commerce Packaging",
-        image: "/img/packaging/ecommerce-packaging.webp",
+        image: `${BASE_PATH}/img/packaging/ecommerce-packaging.webp`,
         description: "Optimized packaging for online retail",
         color: "from-orange-50 to-orange-100",
         icon: "📦"
     },
     {
         name: "Luxury Gift Packaging",
-        image: "/img/packaging/luxury-gift.webp", // Using e-commerce image as placeholder
+        image: `${BASE_PATH}/img/packaging/luxury-gift.webp`, // Using e-commerce image as placeholder
         description: "Premium gift packaging for special occasions",
         color: "from-pink-50 to-pink-100",
         icon: "🎁"

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CustomButton } from "@/Components/Button/CustomButton";
+import { BASE_PATH } from "@/lib/basePath";
 
 const services = [
   { name: "Packaging Solutions", href: "/packaging" },
@@ -19,7 +20,7 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-4">
           <Link href="/" className="block h-8 w-fit">
             <Image
-              src="/img/logos/logo-with-title.png"
+              src={`${BASE_PATH}/img/logos/logo-with-title.png`}
               alt="FLM Solutions Logo"
               width={200}
               height={32}
