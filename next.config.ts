@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
 
-  basePath: '/website',
-  assetPrefix: '/website/',
+  basePath: '/packaging-app',
+  assetPrefix: '/packaging-app/',
   images: {
     unoptimized: true
   },
