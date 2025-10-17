@@ -52,6 +52,8 @@ jobs:
           path: './out'
 
   deploy:
+    # Only deploy on push to master/main, not on PRs or other branches
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
