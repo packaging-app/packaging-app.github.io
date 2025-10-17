@@ -18,13 +18,17 @@ export function CustomButton({
     : "text-white";
 
   return (
-    <a
-      href={href}
-      className={`md:px-5 px-3 py-2 md:text-md rounded-md shadow-md font-semibold hover:cursor-pointer transition duration-300 w-fit ${differentClasses}`}
-      style={isWhite ? { borderColor: '#99b3bdfc', color: '#99b3bdfc' } : { backgroundColor: '#99b3bdfc' }}
-      onClick={onClick}
-    >
-      {children}
-    </a>
+    <div className="pt-2">
+
+
+      <a
+        href={href}
+        className={`md:px-5 px-3 py-2 md:text-md rounded-md shadow-md font-semibold hover:cursor-pointer transition duration-300 w-fit ${differentClasses}`}
+        style={isWhite ? { borderColor: '#99b3bdfc', color: '#99b3bdfc' } : { backgroundColor: '#99b3bdfc' }}
+        onClick={onClick}
+      >
+        {children}
+      </a>
+    </div>
   );
 }

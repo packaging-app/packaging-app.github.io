@@ -1,41 +1,44 @@
 "use client"
 
 import { CustomButton } from "@/Components/Button/CustomButton";
-
-const visualMerchandisingTypes = [
-    {
-        name: "Displays",
-        description: "Eye-catching retail displays that enhance product visibility and brand presence",
-        features: ["Modular design", "Easy assembly", "Brand customization"]
-    },
-    {
-        name: "Point of Purchase",
-        description: "Strategic POP materials that drive impulse purchases and brand engagement",
-        features: ["High-impact graphics", "Durable materials", "Flexible placement"]
-    },
-    {
-        name: "Travel Retail Installations",
-        description: "Specialized installations for airport and travel retail environments",
-        features: ["Security compliant", "Space optimized", "Premium materials"]
-    },
-    {
-        name: "Shop Window & Backlit Panels",
-        description: "Stunning window displays and illuminated panels that attract customers",
-        features: ["LED lighting", "Weather resistant", "Custom sizing"]
-    }
-];
+import { useTranslation } from "react-i18next";
 
 export default function VisualMerchandisingSection() {
+    const { t } = useTranslation("common");
+
+    const visualMerchandisingTypes = [
+        {
+            name: t("visualMerchandising.displays.name"),
+            description: t("visualMerchandising.displays.description"),
+            features: t("visualMerchandising.displays.features", { returnObjects: true })
+        },
+        {
+            name: t("visualMerchandising.pop.name"),
+            description: t("visualMerchandising.pop.description"),
+            features: t("visualMerchandising.pop.features", { returnObjects: true })
+        },
+        {
+            name: t("visualMerchandising.travelRetail.name"),
+            description: t("visualMerchandising.travelRetail.description"),
+            features: t("visualMerchandising.travelRetail.features", { returnObjects: true })
+        },
+        {
+            name: t("visualMerchandising.shopWindow.name"),
+            description: t("visualMerchandising.shopWindow.description"),
+            features: t("visualMerchandising.shopWindow.features", { returnObjects: true })
+        }
+    ];
+
     return (
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 bg-gray-50">
             <div className="container mx-auto px-6 lg:px-16">
                 <div className="text-center mb-16 opacity-0 -translate-x-1">
-                    <p className="text-primary font-semibold uppercase">Visual Merchandising</p>
+                    <p className="text-primary font-semibold uppercase">{t("visualMerchandising.subtitle")}</p>
                     <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Visual Merchandising Solutions
+                        {t("visualMerchandising.title")}
                     </h2>
                     <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                        Complete visual merchandising solutions to enhance brand presence and drive sales
+                        {t("visualMerchandising.description")}
                     </p>
                 </div>
 
@@ -49,7 +52,7 @@ export default function VisualMerchandisingSection() {
                                 {solution.description}
                             </p>
                             <ul className="space-y-2">
-                                {solution.features.map((feature, featureIndex) => (
+                                {(solution.features as string[]).map((feature, featureIndex) => (
                                     <li key={featureIndex} className="flex items-center text-sm text-gray-600">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
                                         {feature}
@@ -62,7 +65,7 @@ export default function VisualMerchandisingSection() {
 
                 <div className="text-center">
                     <CustomButton href="/contact">
-                        Learn More About Our Solutions
+                        {t("visualMerchandising.cta")}
                     </CustomButton>
                 </div>
             </div>

@@ -10,14 +10,14 @@ import WhoAreWeSection from "@/Components/AboutPage/WhoAreWeSection";
 import Footer from "@/Components/Navigation/Footer";
 import React from "react";
 import scrollAnimator from "@/Context/Animation/AnimationService";
+export default function AboutPage() {
 
-export default function page (){
     React.useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page
         scrollAnimator();
     }, []);
 
-    return(
+    return (
         <>
             <NavBar />
             <AboutHeroSection />
@@ -28,5 +28,5 @@ export default function page (){
             <ContactSection />
             <Footer />
         </>
-    )
+    );
 }

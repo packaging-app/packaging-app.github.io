@@ -1,0 +1,199 @@
+{
+    "welcome": "Welcome",
+    "title": "Packaging World",
+    "description": "A packaging business",
+    "hero": {
+        "title": "Packaging &",
+        "titleHighlight": "Visual Merchandising",
+        "subtitle": "Solutions",
+        "description": "We guide global brands towards sustainable packaging design & material selection. From eco-design and research to global sourcing and inventory management, we provide end-to-end packaging and visual merchandising solutions.",
+        "cta": "Get Started"
+    },
+    "introduction": {
+        "subtitle": "About Nimetex Groupe",
+        "title": "Leading Packaging Innovation",
+        "description": "Nimetex Groupe specializes in comprehensive packaging and visual merchandising solutions. We partner with global brands to create sustainable, innovative packaging designs that reduce environmental impact while maximizing brand value. Our expertise spans from eco-design and material selection to global sourcing and supply chain optimization.",
+        "cta": "Get Started"
+    },
+    "services": {
+        "subtitle": "Our Solutions",
+        "title": "Sustainable Packaging & Visual Merchandising",
+        "packagingSolutions": {
+            "name": "Packaging Solutions",
+            "description": "Comprehensive packaging solutions including paper packaging, textile packaging, cases, jewelry & watch packaging, and e-commerce packaging designed for sustainability and brand impact."
+        },
+        "visualMerchandising": {
+            "name": "Visual Merchandising",
+            "description": "Complete visual merchandising solutions including displays, point of purchase materials, travel retail installations, and shop window & backlit panels to enhance brand presence."
+        },
+        "ecoDesign": {
+            "name": "Eco Design & R&D",
+            "description": "In-house research and development focused on sustainable materials, circular design approaches, and innovative packaging solutions that reduce environmental impact."
+        },
+        "globalSourcing": {
+            "name": "Global Sourcing",
+            "description": "Global network of manufacturing partners with transparent supply chains, certified materials, and low-emission transportation methods for sustainable procurement."
+        }
+    },
+    "packaging": {
+        "subtitle": "Our Solutions",
+        "title": "Packaging Solutions",
+        "description": "Comprehensive packaging solutions designed for sustainability and brand impact",
+        "paperPackaging": {
+            "name": "Paper Packaging",
+            "description": "Sustainable paper-based packaging solutions"
+        },
+        "textilePackaging": {
+            "name": "Textile Packaging",
+            "description": "Eco-friendly textile packaging options"
+        },
+        "cases": {
+            "name": "Cases",
+            "description": "Protective cases for various products"
+        },
+        "jewelleryWatch": {
+            "name": "Jewellery & Watch Packaging",
+            "description": "Luxury packaging for jewelry and watches"
+        },
+        "ecommerce": {
+            "name": "E-commerce Packaging",
+            "description": "Optimized packaging for online retail"
+        },
+        "luxuryGift": {
+            "name": "Luxury Gift Packaging",
+            "description": "Premium gift packaging for special occasions"
+        },
+        "cta": "Find Out More"
+    },
+    "visualMerchandising": {
+        "subtitle": "Visual Merchandising",
+        "title": "Visual Merchandising Solutions",
+        "description": "Complete visual merchandising solutions to enhance brand presence and drive sales",
+        "displays": {
+            "name": "Displays",
+            "description": "Eye-catching retail displays that enhance product visibility and brand presence",
+            "features": [
+                "Modular design",
+                "Easy assembly",
+                "Brand customization"
+            ]
+        },
+        "pop": {
+            "name": "Point of Purchase",
+            "description": "Strategic POP materials that drive impulse purchases and brand engagement",
+            "features": [
+                "High-impact graphics",
+                "Durable materials",
+                "Flexible placement"
+            ]
+        },
+        "travelRetail": {
+            "name": "Travel Retail Installations",
+            "description": "Specialized installations for airport and travel retail environments",
+            "features": [
+                "Security compliant",
+                "Space optimized",
+                "Premium materials"
+            ]
+        },
+        "shopWindow": {
+            "name": "Shop Window & Backlit Panels",
+            "description": "Stunning window displays and illuminated panels that attract customers",
+            "features": [
+                "LED lighting",
+                "Weather resistant",
+                "Custom sizing"
+            ]
+        },
+        "cta": "Learn More About Our Solutions"
+    },
+    "certifications": {
+        "subtitle": "Certifications & Responsibility",
+        "title": "Our Social Commitment",
+        "description": "At NIMETEX GROUPE, we attach great importance to respecting current social legislation.",
+        "sa8000": {
+            "title": "SA8000 Certified",
+            "description": "Social responsibility standard since 2020"
+        },
+        "ethical": {
+            "title": "Ethical Commitment",
+            "description": "Rigorous selection of our commercial partners"
+        },
+        "workingConditions": {
+            "title": "Working Conditions",
+            "description": "Respect for the rights and dignity of every worker"
+        },
+        "socialLegislation": {
+            "title": "Social Legislation",
+            "description": "Strict compliance with current social standards"
+        },
+        "certificationTitle": "SA8000 Certification",
+        "certificationSubtitle": "Since 2020 - Social Responsibility Standard",
+        "certificationDescription1": "We select our commercial partners based on their ethical commitment, thus sharing our vision of responsible production.",
+        "certificationDescription2": "SA8000 is a demanding code of conduct that places social aspects at the heart of sustainable development, and we are committed to respecting it rigorously.",
+        "certificationDescription3": "By choosing NIMETEX GROUPE, our clients can be assured that their products are manufactured in compliance with the strictest ethical and social standards, while preserving the rights and dignity of every worker.",
+        "certificationQuote": "We are happy to promote an ethical and productive line, in harmony with our values and our commitment to society."
+    },
+    "reservation": {
+        "subtitle": "Start Today",
+        "title": "Contact Us",
+        "description": "Our experts are available to discuss with you and respond to your digitalization and business development needs. Using clear tools, effective methods, a winning strategy written for you!",
+        "cta": "Start Now"
+    },
+    "contact": {
+        "title": "Contacts",
+        "address": "Neopark de Monastir LOT 46P – Route de Sahline, Manzel Harb 5036",
+        "phone": "+216 31 107 375",
+        "email": "commercial@nimetex.com",
+        "hours": {
+            "weekdays": "Mon–Fri 08.00–17.00",
+            "saturday": "Sat 09.00–12.00"
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "About",
+            "description": "Nimetex Groupe is a leader in sustainable packaging and visual merchandising solutions. We help companies transition to more environmentally friendly practices while optimizing their in-store presence and commercial impact.",
+            "cta": "Discover Our Solutions"
+        },
+        "whoWeAre": {
+            "title": "Who Are We?",
+            "description": "Nimetex Groupe is a Tunisian company specialized in sustainable packaging and visual merchandising. Based in Monastir, we serve clients across North Africa and Europe.\n\nOur expertise covers paper packaging, textile packaging, e-commerce solutions, visual merchandising, eco-design, and global sourcing. We are committed to providing sustainable solutions that respect the environment while maximizing our clients' commercial impact."
+        },
+        "clients": {
+            "title": "Who Do We Serve?",
+            "description": "For nearly 10 years, we have been supporting startups, SMEs, multinationals, and NGOs in their efforts to enhance their products or services, evolve their brand image, and generate additional revenue.\n\nThanks to our experts in retail, digital, customer relations, and communication, we act at every stage of a product or service lifecycle to create value by proposing innovative levers and solutions.",
+            "cta": "Get Started Now"
+        },
+        "strengths": {
+            "subtitle": "Our Values",
+            "title": "Why Choose Nimetex Groupe?",
+            "innovation": {
+                "name": "Sustainable Innovation",
+                "description": "We develop packaging and merchandising solutions that respect the environment while optimizing commercial impact. Our eco-responsible approach ensures sustainable results."
+            },
+            "excellence": {
+                "name": "Operational Excellence",
+                "description": "Our technical expertise and global partner network enable us to deliver high-quality solutions with optimized timelines and exceptional customer service."
+            },
+            "partnership": {
+                "name": "Client Partnership",
+                "description": "We engage in long-term partnership relationships with our clients, understanding their specific challenges and proposing solutions adapted to their needs."
+            },
+            "custom": {
+                "name": "Customized Solutions",
+                "description": "Every project is unique. We create tailor-made solutions that perfectly adapt to your brand, products, and specific commercial objectives."
+            }
+        }
+    },
+    "footer": {
+        "description": "Nimetex Groupe - Comprehensive packaging and visual merchandising solutions. Specialized in sustainable packaging design and material selection for the Tunisian and international markets.",
+        "contactUs": "Contact Us",
+        "services": "Services",
+        "company": "Company",
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "copyright": "© {{year}} Packaging & Visual Merchandising Solutions. All rights reserved."
+    }
+}

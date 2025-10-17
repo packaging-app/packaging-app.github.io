@@ -57,8 +57,8 @@ export default function InterventionFieldsSection({
               />
             </div>
           ))}
-          <div className="col-start-1 col-end-3 row-start-5 row-end-11 h-full w-[100%] rounded-md rounded-tr-[80px] rounded-bl-[80px] bg-main-blue"></div>
-          <div className="col-start-3 col-end-8 row-start-9 row-end-11 h-full w-full rounded-md rounded-tl-[80px] rounded-br-[80px] bg-secondary-green"></div>
+          <div className="col-start-1 col-end-3 row-start-5 row-end-11 h-full w-[100%] rounded-md rounded-tr-[80px] rounded-bl-[80px]" style={{ backgroundColor: '#94b0b9' }}></div>
+          <div className="col-start-3 col-end-8 row-start-9 row-end-11 h-full w-full rounded-md rounded-tl-[80px] rounded-br-[80px]" style={{ backgroundColor: '#cbb2a4' }}></div>
         </div>
       </div>
     </section>
