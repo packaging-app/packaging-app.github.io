@@ -9,7 +9,7 @@ export default function CTASection() {
         {/* Left Content */}
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full font-semibold">
           <h6 className="text-secondary-green uppercase">
-            Commencer Aujourd'hui
+            Commencer Aujourd&apos;hui
           </h6>
           <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold text-white leading-snug">
             Contactez nous
