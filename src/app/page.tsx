@@ -9,6 +9,7 @@ import React from "react";
 import HeroSection from "@/Components/LandingPage/HeroSection";
 import IntroductionSection from "@/Components/LandingPage/IntroductionSection";
 import ServicesSection from "@/Components/LandingPage/ServicesSection";
+import CompanyStatsSection from "@/Components/LandingPage/CompanyStatsSection";
 // import SustainabilitySection from "@/Components/LandingPage/SustainabilitySection";
 import PackagingShowcaseSection from "@/Components/LandingPage/PackagingShowcaseSection";
 import VisualMerchandisingSection from "@/Components/LandingPage/VisualMerchandisingSection";
@@ -27,6 +28,7 @@ export default function Home() {
             <HeroSection />
             <IntroductionSection />
             <ServicesSection />
+            <CompanyStatsSection />
             <PackagingShowcaseSection />
             <VisualMerchandisingSection />
             {/* <SustainabilitySection /> */}
