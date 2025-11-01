@@ -2,6 +2,7 @@
 
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 export default function HeroSection() {
   const { t } = useTranslation("common");
@@ -14,7 +15,7 @@ export default function HeroSection() {
           <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold text-gray-900 leading-snug">
             {t("hero.title")} <br />
             {t("hero.titleHighlight")}{" "}
-            <span style={{ color: "#2874fc" }}>{t("hero.subtitle")}</span>
+            <span className="text-primary">{t("hero.subtitle")}</span>
           </h1>
           <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
             {t("hero.description")}
@@ -25,11 +26,13 @@ export default function HeroSection() {
 
         {/* Right Images */}
         <div className="grid grid-cols-7 grid-rows-6 items-end max-w-[800px] max-h-[500px] gap-4">
-          <div className="col-start-5 col-end-8 row-start-1 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[80px] rounded-br-[80px]">
-            <img
-              src="/img/packaging/textile-packaging.webp"
+          <div className="col-start-5 col-end-8 row-start-1 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[80px] rounded-br-[80px] relative">
+            <Image
+              src="/img/packaging/new-picture-1.png"
               alt="Paper packaging solutions"
-              className="object-cover min-w-full min-h-full shadow-md"
+              className="object-cover shadow-md"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="col-start-1 col-end-5 row-start-5 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[50px] rounded-br-[50px] flex items-center">
@@ -46,14 +49,8 @@ export default function HeroSection() {
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
-          <div
-            className="col-start-1 col-end-3 row-start-4 row-end-5 h-full w-full rounded-md rounded-tl-[50px] rounded-br-[50px]"
-            style={{ backgroundColor: "#4e4c4c" }}
-          ></div>
-          <div
-            className="col-start-2 col-end-3 row-start-3 row-end-4 aspect-square w-full rounded-full animate-bounce-vertical"
-            style={{ backgroundColor: "#2874fc" }}
-          ></div>
+          <div className="col-start-1 col-end-3 row-start-4 row-end-5 h-full w-full rounded-md rounded-tl-[50px] rounded-br-[50px] bg-secondary"></div>
+          <div className="col-start-2 col-end-3 row-start-3 row-end-4 aspect-square w-full rounded-full animate-bounce-vertical bg-primary"></div>
         </div>
       </div>
     </section>
