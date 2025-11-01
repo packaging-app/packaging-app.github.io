@@ -42,7 +42,7 @@ export default function StrengthsSection() {
         </h2>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
-          {strengths.map((service) => (
+          {strengths.map(service => (
             <div
               key={service.name}
               className="rounded-2xl bg-white p-8 shadow hover:shadow-lg transition"

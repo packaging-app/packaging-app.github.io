@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
@@ -71,11 +71,10 @@ export default function PartnersSection() {
 
   const totalPages = Math.ceil(partnersList.length / visible);
 
-  const next = () =>
-    setIndex((prev) => (prev + 1 >= totalPages ? 0 : prev + 1));
+  const next = () => setIndex(prev => (prev + 1 >= totalPages ? 0 : prev + 1));
 
   const prev = () =>
-    setIndex((prev) => (prev - 1 < 0 ? totalPages - 1 : prev - 1));
+    setIndex(prev => (prev - 1 < 0 ? totalPages - 1 : prev - 1));
 
   return (
     <section className="bg-white py-16">
@@ -83,9 +82,7 @@ export default function PartnersSection() {
         {/* Header */}
         <div className="flex flex-row justify-between items-center w-full">
           <div className="flex flex-col">
-            <p className="text-primary font-semibold uppercase">
-              Our Partners
-            </p>
+            <p className="text-primary font-semibold uppercase">Our Partners</p>
             <h2 className="mt-2 xl:text-3xl lg:text-2xl text-xl font-bold tracking-tight text-gray-900">
               Trusted by Leading Brands
             </h2>
@@ -122,7 +119,7 @@ export default function PartnersSection() {
               gap: `${gap}px`,
             }}
           >
-            {partnersList.map((partner) => (
+            {partnersList.map(partner => (
               <div
                 key={partner.name}
                 className={`flex items-center justify-center rounded-2xl bg-faint shadow-sm`}

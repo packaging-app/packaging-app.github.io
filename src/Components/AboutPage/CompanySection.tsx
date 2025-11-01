@@ -30,7 +30,9 @@ export default function CompanySection() {
           <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
             {t("about.clients.description")}
           </p>
-          <CustomButton href={"/contact"}>{t("about.clients.cta")}</CustomButton>
+          <CustomButton href={"/contact"}>
+            {t("about.clients.cta")}
+          </CustomButton>
         </div>
 
         {/* Right Images */}

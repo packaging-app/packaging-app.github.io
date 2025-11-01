@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { useTranslation } from "react-i18next";
@@ -8,12 +8,13 @@ export default function ReservationSection() {
 
   return (
     <section className="bg-faint py-20 w-full">
-      <div className="flex flex-col gap-10 lg:flex-row items-center justify-evenly rounded-[40px] lg:p-20 lg:mx-20 md:p-14 md:mx-14 mx-6 p-6 opacity-0 -translate-x-1" style={{ backgroundColor: '#2874fc' }}>
+      <div
+        className="flex flex-col gap-10 lg:flex-row items-center justify-evenly rounded-[40px] lg:p-20 lg:mx-20 md:p-14 md:mx-14 mx-6 p-6 opacity-0 -translate-x-1"
+        style={{ backgroundColor: "#2874fc" }}
+      >
         {/* Left Content */}
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full font-semibold">
-          <h6 className="uppercase text-white">
-            {t("reservation.subtitle")}
-          </h6>
+          <h6 className="uppercase text-white">{t("reservation.subtitle")}</h6>
           <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold text-white leading-snug">
             {t("reservation.title")}
           </h1>
@@ -21,7 +22,9 @@ export default function ReservationSection() {
             {t("reservation.description")}
           </p>
           <div className="pt-2">
-            <CustomButton isWhite={true} href={"/contact"}>{t("reservation.cta")}</CustomButton>
+            <CustomButton isWhite={true} href={"/contact"}>
+              {t("reservation.cta")}
+            </CustomButton>
           </div>
         </div>
 
@@ -41,7 +44,10 @@ export default function ReservationSection() {
               className="object-cover shadow-md"
             />
           </div>
-          <div className="col-start-3 col-end-4 row-start-3 row-end-4 aspect-square w-full rounded-full" style={{ backgroundColor: '#dddddd' }}></div>
+          <div
+            className="col-start-3 col-end-4 row-start-3 row-end-4 aspect-square w-full rounded-full"
+            style={{ backgroundColor: "#dddddd" }}
+          ></div>
         </div>
       </div>
     </section>

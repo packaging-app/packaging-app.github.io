@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +10,10 @@ export default function Footer() {
 
   const services = [
     { name: t("services.packagingSolutions.name"), href: "/packaging" },
-    { name: t("services.visualMerchandising.name"), href: "/visual-merchandising" },
+    {
+      name: t("services.visualMerchandising.name"),
+      href: "/visual-merchandising",
+    },
     { name: t("services.ecoDesign.name"), href: "/eco-design" },
     { name: t("services.globalSourcing.name"), href: "/global-sourcing" },
   ];
@@ -30,9 +33,7 @@ export default function Footer() {
             />
           </Link>
 
-          <p className="text-sm max-w-xs mt-2">
-            {t("footer.description")}
-          </p>
+          <p className="text-sm max-w-xs mt-2">{t("footer.description")}</p>
           <div className="pt-2">
             <CustomButton>{t("footer.contactUs")}</CustomButton>
           </div>
@@ -42,7 +43,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">{t("footer.services")}</h4>
           <ul className="space-y-2 text-sm">
-            {services.map((item) => (
+            {services.map(item => (
               <li key={item.name}>
                 <a href={item.href} className="hover:text-main-blue">
                   {item.name}
@@ -77,9 +78,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="mt-12 border-t border-blue-800 pt-6 flex flex-col md:flex-row justify-between items-center text-sm px-6 lg:px-16">
-        <p>
-          {t("footer.copyright", { year: new Date().getFullYear() })}
-        </p>
+        <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <a
             target="_blank"

@@ -15,7 +15,9 @@ export default function AboutHeroSection() {
           <p className="text-faint xl:text-lg lg:text-md text-sm font-semibold">
             {t("about.hero.description")}
           </p>
-          <CustomButton isWhite={true} href={"/contact"}>{t("about.hero.cta")}</CustomButton>
+          <CustomButton isWhite={true} href={"/contact"}>
+            {t("about.hero.cta")}
+          </CustomButton>
         </div>
 
         {/* Right Images */}

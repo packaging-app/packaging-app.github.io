@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Dialog,
@@ -92,20 +92,22 @@ export default function NavBar() {
           {/* Mobile Language Switcher */}
           <div className="flex items-center gap-1 bg-white rounded-lg p-1 shadow-sm border border-gray-200">
             <button
-              onClick={() => switchLanguage('fr')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 ${locale === 'fr'
-                ? 'bg-primary text-white'
-                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
-                }`}
+              onClick={() => switchLanguage("fr")}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 ${
+                locale === "fr"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 hover:text-primary hover:bg-primary/10"
+              }`}
             >
               FR
             </button>
             <button
-              onClick={() => switchLanguage('en')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 ${locale === 'en'
-                ? 'bg-primary text-white'
-                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
-                }`}
+              onClick={() => switchLanguage("en")}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 ${
+                locale === "en"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 hover:text-primary hover:bg-primary/10"
+              }`}
             >
               EN
             </button>
@@ -121,10 +123,16 @@ export default function NavBar() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link href="/" className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300">
+          <Link
+            href="/"
+            className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300"
+          >
             {t("footer.home")}
           </Link>
-          <Link href="/about" className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300">
+          <Link
+            href="/about"
+            className="text-sm/6 font-semibold text-gray-900 hover:text-primary transition-colors duration-300"
+          >
             {t("footer.about")}
           </Link>
           <Popover className="relative">
@@ -141,23 +149,28 @@ export default function NavBar() {
               className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 overflow-hidden rounded-2xl bg-white shadow-2xl border border-gray-100 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
             >
               <div className="p-1">
-                {services.map((item) => (
+                {services.map(item => (
                   <div
                     key={item.name}
                     className="group relative flex items-center gap-x-4 rounded-xl p-1 text-sm/6 hover:bg-primary/5 transition-all duration-300"
                   >
-                    <div className="flex size-12 flex-none items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary transition-all duration-300" style={{ backgroundColor: 'rgba(148, 176, 185, 0.1)' }}>
+                    <div
+                      className="flex size-12 flex-none items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary transition-all duration-300"
+                      style={{ backgroundColor: "rgba(148, 176, 185, 0.1)" }}
+                    >
                       <item.icon
                         aria-hidden="true"
                         className="size-6 text-primary transition-colors duration-300"
                       />
                     </div>
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                      <a
+                        href={item.href}
+                        className="block font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300"
+                      >
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-
                     </div>
                   </div>
                 ))}
@@ -181,25 +194,29 @@ export default function NavBar() {
           {/* Language Switcher */}
           <div className="flex items-center gap-1 bg-white rounded-lg p-1 shadow-sm border border-gray-200">
             <button
-              onClick={() => switchLanguage('fr')}
-              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${locale === 'fr'
-                ? 'bg-primary text-white'
-                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
-                }`}
+              onClick={() => switchLanguage("fr")}
+              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
+                locale === "fr"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 hover:text-primary hover:bg-primary/10"
+              }`}
             >
               🇫🇷 FR
             </button>
             <button
-              onClick={() => switchLanguage('en')}
-              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${locale === 'en'
-                ? 'bg-primary text-white'
-                : 'text-gray-600 hover:text-primary hover:bg-primary/10'
-                }`}
+              onClick={() => switchLanguage("en")}
+              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
+                locale === "en"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 hover:text-primary hover:bg-primary/10"
+              }`}
             >
               🇬🇧 EN
             </button>
           </div>
-          <CustomButton isWhite={true} href={"/contact"}>{t("footer.contactUs")}</CustomButton>
+          <CustomButton isWhite={true} href={"/contact"}>
+            {t("footer.contactUs")}
+          </CustomButton>
         </div>
         <Dialog
           open={mobileMenuOpen}
@@ -207,7 +224,10 @@ export default function NavBar() {
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10" style={{ backgroundColor: '#f8f9fa' }}>
+          <DialogPanel
+            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10"
+            style={{ backgroundColor: "#f8f9fa" }}
+          >
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
@@ -238,7 +258,7 @@ export default function NavBar() {
                       />
                     </DisclosureButton>
                     <DisclosurePanel className="mt-2 space-y-2">
-                      {services.map((item) => (
+                      {services.map(item => (
                         <DisclosureButton
                           key={item.name}
                           as="a"
@@ -264,7 +284,9 @@ export default function NavBar() {
                   </Link>
                 </div>
                 <div className="py-6">
-                  <CustomButton href={"/contact"}>{t("footer.contactUs")}</CustomButton>
+                  <CustomButton href={"/contact"}>
+                    {t("footer.contactUs")}
+                  </CustomButton>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 export interface DefinitionSectionProps {
   title: string;
@@ -31,7 +31,10 @@ export default function DefinitionSection({
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
-          <div className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full" style={{ backgroundColor: '#a0cdde' }}></div>
+          <div
+            className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full"
+            style={{ backgroundColor: "#a0cdde" }}
+          ></div>
         </div>
 
         {/* Right Content */}

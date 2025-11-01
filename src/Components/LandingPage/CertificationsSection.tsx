@@ -1,6 +1,11 @@
-"use client"
+"use client";
 
-import { ShieldCheckIcon, HeartIcon, UsersIcon, ScaleIcon } from "@heroicons/react/24/outline";
+import {
+  ShieldCheckIcon,
+  HeartIcon,
+  UsersIcon,
+  ScaleIcon,
+} from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
 
 export default function CertificationsSection() {
@@ -10,23 +15,23 @@ export default function CertificationsSection() {
     {
       icon: ShieldCheckIcon,
       title: t("certifications.sa8000.title"),
-      description: t("certifications.sa8000.description")
+      description: t("certifications.sa8000.description"),
     },
     {
       icon: HeartIcon,
       title: t("certifications.ethical.title"),
-      description: t("certifications.ethical.description")
+      description: t("certifications.ethical.description"),
     },
     {
       icon: UsersIcon,
       title: t("certifications.workingConditions.title"),
-      description: t("certifications.workingConditions.description")
+      description: t("certifications.workingConditions.description"),
     },
     {
       icon: ScaleIcon,
       title: t("certifications.socialLegislation.title"),
-      description: t("certifications.socialLegislation.description")
-    }
+      description: t("certifications.socialLegislation.description"),
+    },
   ];
 
   return (
@@ -96,17 +101,11 @@ export default function CertificationsSection() {
                 </div>
 
                 <div className="space-y-6 text-gray-700">
-                  <p>
-                    {t("certifications.certificationDescription1")}
-                  </p>
+                  <p>{t("certifications.certificationDescription1")}</p>
 
-                  <p>
-                    {t("certifications.certificationDescription2")}
-                  </p>
+                  <p>{t("certifications.certificationDescription2")}</p>
 
-                  <p>
-                    {t("certifications.certificationDescription3")}
-                  </p>
+                  <p>{t("certifications.certificationDescription3")}</p>
 
                   <div className="bg-primary/5 rounded-xl p-6 mt-8">
                     <p className="text-center font-semibold text-primary">

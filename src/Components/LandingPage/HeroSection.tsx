@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { useTranslation } from "react-i18next";
@@ -13,14 +13,14 @@ export default function HeroSection() {
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full">
           <h1 className="xl:text-4xl lg:text-3xl text-2xl font-bold text-gray-900 leading-snug">
             {t("hero.title")} <br />
-            {t("hero.titleHighlight")} <span style={{ color: '#2874fc' }}>{t("hero.subtitle")}</span>
+            {t("hero.titleHighlight")}{" "}
+            <span style={{ color: "#2874fc" }}>{t("hero.subtitle")}</span>
           </h1>
           <p className="text-gray-600 xl:text-lg lg:text-md text-sm font-semibold">
             {t("hero.description")}
           </p>
 
           <CustomButton href={"/contact"}>{t("hero.cta")}</CustomButton>
-
         </div>
 
         {/* Right Images */}
@@ -46,8 +46,14 @@ export default function HeroSection() {
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
-          <div className="col-start-1 col-end-3 row-start-4 row-end-5 h-full w-full rounded-md rounded-tl-[50px] rounded-br-[50px]" style={{ backgroundColor: '#c8b2a2' }}></div>
-          <div className="col-start-2 col-end-3 row-start-3 row-end-4 aspect-square w-full rounded-full" style={{ backgroundColor: '#2874fc' }}></div>
+          <div
+            className="col-start-1 col-end-3 row-start-4 row-end-5 h-full w-full rounded-md rounded-tl-[50px] rounded-br-[50px]"
+            style={{ backgroundColor: "#4e4c4c" }}
+          ></div>
+          <div
+            className="col-start-2 col-end-3 row-start-3 row-end-4 aspect-square w-full rounded-full animate-bounce-vertical"
+            style={{ backgroundColor: "#2874fc" }}
+          ></div>
         </div>
       </div>
     </section>
