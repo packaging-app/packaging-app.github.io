@@ -9,11 +9,10 @@ export default function Footer() {
   const { t } = useTranslation("common");
 
   const services = [
-    { name: t("services.textilePackaging.name"), href: "/packaging" },
-    { name: t("services.manufacturing.name"), href: "/manufacturing" },
-    { name: t("services.development.name"), href: "/development" },
-    { name: t("services.logistics.name"), href: "/logistics" },
-    { name: t("services.specializedProducts.name"), href: "/specialized-products" },
+    { name: t("services.packagingSolutions.name"), href: "/packaging" },
+    { name: t("services.visualMerchandising.name"), href: "/visual-merchandising" },
+    { name: t("services.ecoDesign.name"), href: "/eco-design" },
+    { name: t("services.globalSourcing.name"), href: "/global-sourcing" },
   ];
 
   return (

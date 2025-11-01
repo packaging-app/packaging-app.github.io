@@ -8,7 +8,7 @@ export default function ReservationSection() {
 
   return (
     <section className="bg-faint py-20 w-full">
-      <div className="flex flex-col gap-10 lg:flex-row items-center justify-evenly rounded-[40px] lg:p-20 lg:mx-20 md:p-14 md:mx-14 mx-6 p-6 opacity-0 -translate-x-1" style={{ backgroundColor: '#2874fc' }}>
+      <div className="flex flex-col gap-10 lg:flex-row items-center justify-evenly rounded-[40px] lg:p-20 lg:mx-20 md:p-14 md:mx-14 mx-6 p-6 opacity-0 -translate-x-1" style={{ backgroundColor: '#94b0b9' }}>
         {/* Left Content */}
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full font-semibold">
           <h6 className="uppercase text-white">

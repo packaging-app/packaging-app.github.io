@@ -14,10 +14,9 @@ import {
 import React from "react";
 import {
   CubeIcon,
-  CogIcon,
+  ShoppingBagIcon,
   BeakerIcon,
-  TruckIcon,
-  WrenchScrewdriverIcon,
+  GlobeAltIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
@@ -30,29 +29,24 @@ import { useLanguage } from "@/Context/Language/LanguageContext";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getServices = (t: any) => [
   {
-    name: t("services.textilePackaging.name"),
+    name: t("services.packagingSolutions.name"),
     href: "/packaging",
     icon: CubeIcon,
   },
   {
-    name: t("services.manufacturing.name"),
-    href: "/manufacturing",
-    icon: CogIcon,
+    name: t("services.visualMerchandising.name"),
+    href: "/visual-merchandising",
+    icon: ShoppingBagIcon,
   },
   {
-    name: t("services.development.name"),
-    href: "/development",
+    name: t("services.ecoDesign.name"),
+    href: "/eco-design",
     icon: BeakerIcon,
   },
   {
-    name: t("services.logistics.name"),
-    href: "/logistics",
-    icon: TruckIcon,
-  },
-  {
-    name: t("services.specializedProducts.name"),
-    href: "/specialized-products",
-    icon: WrenchScrewdriverIcon,
+    name: t("services.globalSourcing.name"),
+    href: "/global-sourcing",
+    icon: GlobeAltIcon,
   },
 ];
 
@@ -144,7 +138,7 @@ export default function NavBar() {
                 {services.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-4 rounded-xl p-1 text-sm/6 hover:bg-primary/5 transition-all duration-300"
+                    className="group relative flex items-center gap-x-4 rounded-xl p-2 text-sm/6 hover:bg-primary/5 transition-all duration-300"
                   >
                     <div className="flex size-12 flex-none items-center justify-center rounded-xl bg-primary/10 group-hover:bg-primary transition-all duration-300" style={{ backgroundColor: 'rgba(148, 176, 185, 0.1)' }}>
                       <item.icon
@@ -162,7 +156,7 @@ export default function NavBar() {
                   </div>
                 ))}
               </div>
-              <div className="bg-primary hover:bg-primary/90 transition-colors duration-300 rounded-b-2xl">
+              <div className="bg-primary hover:bg-primary/90 transition-colors duration-300 rounded-b-2xl" style={{ backgroundColor: '#94b0b9' }}>
                 <a
                   href={"/contact"}
                   className="flex items-center justify-center gap-x-2.5 p-4 text-sm/6 font-semibold text-white hover:text-white"
