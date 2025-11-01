@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   MapPinIcon,
@@ -29,9 +29,7 @@ export default function ContactSection() {
 
         <div className="flex items-start space-x-3">
           <MapPinIcon className="h-6 w-6 flex-shrink-0" />
-          <p className="text-sm leading-relaxed">
-            {t("contact.address")}
-          </p>
+          <p className="text-sm leading-relaxed">{t("contact.address")}</p>
         </div>
 
         <div className="flex items-center space-x-3">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { CustomButton } from "@/Components/Button/CustomButton";
 
@@ -20,7 +20,9 @@ export default function CTASection() {
             des outils clairs, des méthodes efficaces, une stratégie gagnante
             rédigé pour vous!
           </p>
-          <CustomButton isWhite={true} href={"/contact"}>Commencer Maintenant</CustomButton>
+          <CustomButton isWhite={true} href={"/contact"}>
+            Commencer Maintenant
+          </CustomButton>
         </div>
 
         {/* Right Images */}

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import NavBar from "@/Components/Navigation/NavBar";
 import AboutHeroSection from "@/Components/AboutPage/AboutHeroSection";
@@ -11,22 +11,21 @@ import Footer from "@/Components/Navigation/Footer";
 import React from "react";
 import scrollAnimator from "@/Context/Animation/AnimationService";
 export default function AboutPage() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+    scrollAnimator();
+  }, []);
 
-    React.useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top of the page
-        scrollAnimator();
-    }, []);
-
-    return (
-        <>
-            <NavBar />
-            <AboutHeroSection />
-            <WhoAreWeSection />
-            <CompanySection />
-            <StrengthsSection />
-            <ReservationSection />
-            <ContactSection />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <NavBar />
+      <AboutHeroSection />
+      <WhoAreWeSection />
+      <CompanySection />
+      <StrengthsSection />
+      <ReservationSection />
+      <ContactSection />
+      <Footer />
+    </>
+  );
 }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import {
@@ -61,9 +61,9 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
             <p
               className="text-gray-600 text-sm lg:text-base leading-relaxed mb-4 overflow-hidden"
               style={{
-                display: '-webkit-box',
+                display: "-webkit-box",
                 WebkitLineClamp: 2,
-                WebkitBoxOrient: 'vertical',
+                WebkitBoxOrient: "vertical",
               }}
             >
               {service.description}
@@ -103,7 +103,7 @@ function ServiceCard({ service, index }: { service: Service; index: number }) {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
@@ -117,7 +117,9 @@ export default function ServicesSection() {
       icon: CubeIcon,
       link: "/packaging",
       image: "/img/p6.jpg",
-      subservices: t("services.textilePackaging.subservices", { returnObjects: true }) as string[],
+      subservices: t("services.textilePackaging.subservices", {
+        returnObjects: true,
+      }) as string[],
     },
     {
       name: t("services.manufacturing.name"),
@@ -125,7 +127,9 @@ export default function ServicesSection() {
       icon: CogIcon,
       link: "/manufacturing",
       image: "/img/p7.jpg",
-      subservices: t("services.manufacturing.subservices", { returnObjects: true }) as string[],
+      subservices: t("services.manufacturing.subservices", {
+        returnObjects: true,
+      }) as string[],
     },
     {
       name: t("services.development.name"),
@@ -133,7 +137,9 @@ export default function ServicesSection() {
       icon: BeakerIcon,
       link: "/development",
       image: "/img/p8.jpg",
-      subservices: t("services.development.subservices", { returnObjects: true }) as string[],
+      subservices: t("services.development.subservices", {
+        returnObjects: true,
+      }) as string[],
     },
     {
       name: t("services.logistics.name"),
@@ -141,7 +147,9 @@ export default function ServicesSection() {
       icon: TruckIcon,
       link: "/logistics",
       image: "/img/p9.jpg",
-      subservices: t("services.logistics.subservices", { returnObjects: true }) as string[],
+      subservices: t("services.logistics.subservices", {
+        returnObjects: true,
+      }) as string[],
     },
     {
       name: t("services.specializedProducts.name"),
@@ -149,7 +157,9 @@ export default function ServicesSection() {
       icon: WrenchScrewdriverIcon,
       link: "/specialized-products",
       image: "/img/p1.jpg",
-      subservices: t("services.specializedProducts.subservices", { returnObjects: true }) as string[],
+      subservices: t("services.specializedProducts.subservices", {
+        returnObjects: true,
+      }) as string[],
     },
   ];
 
@@ -178,11 +188,14 @@ export default function ServicesSection() {
           {/* Second row: 2 services centered */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {services.slice(3, 5).map((service, index) => (
-              <ServiceCard key={service.name} service={service} index={index + 3} />
+              <ServiceCard
+                key={service.name}
+                service={service}
+                index={index + 3}
+              />
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

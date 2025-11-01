@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   CheckCircleIcon,
@@ -6,35 +6,36 @@ import {
   TruckIcon,
   ArrowPathIcon,
   ShieldCheckIcon,
-  LightBulbIcon
+  LightBulbIcon,
 } from "@heroicons/react/24/outline";
 
 const sustainabilityFeatures = [
   {
     icon: ArrowPathIcon,
     title: "Recycled Materials",
-    description: "Solutions made from recycled and low-impact materials"
+    description: "Solutions made from recycled and low-impact materials",
   },
   {
     icon: LightBulbIcon,
     title: "Circular Design",
-    description: "Solutions designed and developed with a circular approach"
+    description: "Solutions designed and developed with a circular approach",
   },
   {
     icon: ShieldCheckIcon,
     title: "Certified Materials",
-    description: "Use of certified materials from a transparent supply chain"
+    description: "Use of certified materials from a transparent supply chain",
   },
   {
     icon: GlobeAltIcon,
     title: "Local Sourcing",
-    description: "Raw materials sourced and processed within the same continent"
+    description:
+      "Raw materials sourced and processed within the same continent",
   },
   {
     icon: TruckIcon,
     title: "Low-Emission Transport",
-    description: "Transportation conducted using low-emission methods"
-  }
+    description: "Transportation conducted using low-emission methods",
+  },
 ];
 
 export default function SustainabilitySection() {
@@ -47,7 +48,8 @@ export default function SustainabilitySection() {
             Our Sustainability Highlights
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            We guide global brands towards sustainable packaging design & material selection
+            We guide global brands towards sustainable packaging design &
+            material selection
           </p>
         </div>
 
@@ -60,9 +62,7 @@ export default function SustainabilitySection() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">
-                {feature.description}
-              </p>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -75,8 +75,9 @@ export default function SustainabilitySection() {
             Commitment to Sustainability
           </h3>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Brandart focuses on partnering with brands on reducing carbon footprint
-            across its entire business, manufacturing supply chain, and product life cycle.
+            Brandart focuses on partnering with brands on reducing carbon
+            footprint across its entire business, manufacturing supply chain,
+            and product life cycle.
           </p>
         </div>
       </div>

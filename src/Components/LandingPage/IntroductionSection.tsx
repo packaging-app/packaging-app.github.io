@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { CustomButton } from "@/Components/Button/CustomButton";
 import { useTranslation } from "react-i18next";
@@ -25,12 +25,17 @@ export default function IntroductionSection() {
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
-          <div className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full" style={{ backgroundColor: '#c8b2a2' }}></div>
+          <div
+            className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full"
+            style={{ backgroundColor: "#4e4c4c" }}
+          ></div>
         </div>
 
         {/* Right Content */}
         <div className="space-y-6 lg:w-[46%] md:min-w-96 min-w-full font-semibold">
-          <h6 className="text-primary uppercase">{t("introduction.subtitle")}</h6>
+          <h6 className="text-primary uppercase">
+            {t("introduction.subtitle")}
+          </h6>
           <h1 className="text-3xl font-bold text-gray-900 leading-snug sm:text-4xl">
             {t("introduction.title")}
           </h1>

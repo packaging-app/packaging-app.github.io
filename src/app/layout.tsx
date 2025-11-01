@@ -5,36 +5,34 @@ import { LanguageProvider } from "@/Context/Language/LanguageContext";
 import AppWrapper from "@/Components/AppWrapper";
 
 const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-    title: "Nimetex Groupe",
-    description: "A website about a textile business"
+  title: "Nimetex Groupe",
+  description: "A website about a textile business",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <html className="size-full">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
-                <LanguageProvider>
-                    <AppWrapper>
-                        {children}
-                    </AppWrapper>
-                </LanguageProvider>
-            </body>
-        </html>
-    );
+  return (
+    <html className="size-full">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <LanguageProvider>
+          <AppWrapper>{children}</AppWrapper>
+        </LanguageProvider>
+      </body>
+    </html>
+  );
 }
