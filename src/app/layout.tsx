@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Nimetex Groupe",
-    description: "A website about a textile business"
+    title: "Packaging World",
+    description: "A website about a packaging business"
 };
 
 export default function RootLayout({

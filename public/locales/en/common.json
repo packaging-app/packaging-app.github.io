@@ -3,69 +3,36 @@
     "title": "Packaging World",
     "description": "A packaging business",
     "hero": {
-        "title": "TEXTILE EXCELLENCE,",
-        "titleHighlight": "WITH MEANING",
+        "title": "Packaging &",
+        "titleHighlight": "Visual Merchandising",
         "subtitle": "Solutions",
-        "description": "Nimetex Groupe, your offshore textile partner with over 23 years of experience. We offer comprehensive design, production and textile sourcing services for luxury brands and the fashion industry.",
-        "cta": "Discover Our Services"
+        "description": "We guide global brands towards sustainable packaging design & material selection. From eco-design and research to global sourcing and inventory management, we provide end-to-end packaging and visual merchandising solutions.",
+        "cta": "Get Started"
     },
     "introduction": {
         "subtitle": "About Nimetex Groupe",
-        "title": "YOUR OFFSHORE TEXTILE PARTNER",
-        "description": "Nimetex Groupe is a leading Tunisian textile company with over 23 years of experience. We specialize in producing quality garments for the luxury market, offering comprehensive services from design to mass production. Our expertise covers pattern making, screen printing, fabric sourcing and collection management for prestigious brands.",
-        "cta": "Discover Our Expertise"
+        "title": "Leading Packaging Innovation",
+        "description": "Nimetex Groupe specializes in comprehensive packaging and visual merchandising solutions. We partner with global brands to create sustainable, innovative packaging designs that reduce environmental impact while maximizing brand value. Our expertise spans from eco-design and material selection to global sourcing and supply chain optimization.",
+        "cta": "Get Started"
     },
     "services": {
-        "subtitle": "Our Services",
-        "title": "Complete Textile Production Services",
-        "textilePackaging": {
-            "name": "Textile Packaging",
-            "description": "Customized textile packaging solutions for all your needs",
-            "subservices": [
-                "Pouches",
-                "Tote bags",
-                "Makeup bags",
-                "Clothing covers"
-            ]
+        "subtitle": "Our Solutions",
+        "title": "Sustainable Packaging & Visual Merchandising",
+        "packagingSolutions": {
+            "name": "Packaging Solutions",
+            "description": "Comprehensive packaging solutions including paper packaging, textile packaging, cases, jewelry & watch packaging, and e-commerce packaging designed for sustainability and brand impact."
         },
-        "manufacturing": {
-            "name": "Factory",
-            "description": "Industrial production with modern equipment and advanced techniques",
-            "subservices": [
-                "Automatic manufacturing",
-                "Screen printing",
-                "Embroidery",
-                "Heat transfer",
-                "Washing"
-            ]
+        "visualMerchandising": {
+            "name": "Visual Merchandising",
+            "description": "Complete visual merchandising solutions including displays, point of purchase materials, travel retail installations, and shop window & backlit panels to enhance brand presence."
         },
-        "development": {
-            "name": "Development",
-            "description": "Sourcing and development of custom textile solutions",
-            "subservices": [
-                "Sourcing",
-                "Raw materials",
-                "Custom creation"
-            ]
+        "ecoDesign": {
+            "name": "Eco Design & R&D",
+            "description": "In-house research and development focused on sustainable materials, circular design approaches, and innovative packaging solutions that reduce environmental impact."
         },
-        "logistics": {
-            "name": "Logistics",
-            "description": "Complete logistics services for your exports with inventory management, international transport and real-time order tracking",
-            "subservices": [
-                "Store export",
-                "International transport"
-            ]
-        },
-        "specializedProducts": {
-            "name": "5️Hand made + Sports bags + Medical + Technical + Safety",
-            "description": "Specialized and technical products according to your specifications",
-            "subservices": [
-                "Protection",
-                "Safety",
-                "Medical",
-                "Sports",
-                "Technical"
-            ]
+        "globalSourcing": {
+            "name": "Global Sourcing",
+            "description": "Global network of manufacturing partners with transparent supply chains, certified materials, and low-emission transportation methods for sustainable procurement."
         }
     },
     "packaging": {
@@ -165,16 +132,7 @@
         "certificationDescription1": "We select our commercial partners based on their ethical commitment, thus sharing our vision of responsible production.",
         "certificationDescription2": "SA8000 is a demanding code of conduct that places social aspects at the heart of sustainable development, and we are committed to respecting it rigorously.",
         "certificationDescription3": "By choosing NIMETEX GROUPE, our clients can be assured that their products are manufactured in compliance with the strictest ethical and social standards, while preserving the rights and dignity of every worker.",
-        "certificationQuote": "We are happy to promote an ethical and productive line, in harmony with our commitment to society."
-    },
-    "stats": {
-        "title": "Nimetex Groupe in Numbers",
-        "description": "Over 23 years of excellence in the textile industry with recognized expertise and a team dedicated to quality.",
-        "yearsExperience": "Years of experience",
-        "years": " Years",
-        "employees": "Employees",
-        "productionLines": "Production lines",
-        "clients": "Clients"
+        "certificationQuote": "We are happy to promote an ethical and productive line, in harmony with our values and our commitment to society."
     },
     "reservation": {
         "subtitle": "Start Today",
@@ -200,7 +158,7 @@
         },
         "whoWeAre": {
             "title": "Who Are We?",
-            "description": "Nimetex Groupe is a leading Tunisian textile company with over 23 years of experience. Based in Monastir, we specialize in producing quality garments for the luxury market.\n\nOur expertise covers collection design, pattern making, screen printing, fabric sourcing and complete textile production chain management. We are committed to providing comprehensive services from design to mass production for prestigious brands."
+            "description": "Nimetex Groupe is a Tunisian company specialized in sustainable packaging and visual merchandising. Based in Monastir, we serve clients across North Africa and Europe.\n\nOur expertise covers paper packaging, textile packaging, e-commerce solutions, visual merchandising, eco-design, and global sourcing. We are committed to providing sustainable solutions that respect the environment while maximizing our clients' commercial impact."
         },
         "clients": {
             "title": "Who Do We Serve?",
