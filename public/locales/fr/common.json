@@ -270,6 +270,10 @@
         "name": "Contrôle Qualité",
         "description": "Mesures rigoureuses de contrôle qualité tout au long du processus de production"
       }
+    },
+    "ctaSection": {
+      "title": "Prêt à Démarrer la Fabrication ?",
+      "description": "Obtenez un devis personnalisé pour vos besoins de fabrication"
     }
   },
   "development": {
@@ -330,6 +334,20 @@
     "showcase": {
       "title": "Nos Solutions Logistiques",
       "description": "Explorez nos services logistiques complets conçus pour rationaliser vos opérations de chaîne d'approvisionnement."
+    },
+    "globalNetwork": {
+      "title": "Réseau Logistique Mondial",
+      "description": "Connecter vos produits au monde",
+      "stats": {
+        "countries": "Pays",
+        "shipments": "Expéditions",
+        "onTime": "À l'Heure",
+        "support": "Support"
+      }
+    },
+    "ctaSection": {
+      "title": "Rationalisez Votre Chaîne d'Approvisionnement",
+      "description": "Laissez-nous gérer la logistique pendant que vous vous concentrez sur la croissance de votre entreprise"
     },
     "services": {
       "warehouseManagement": {
@@ -399,6 +417,10 @@
         "name": "Articles de Luxe",
         "description": "Produits textiles de luxe premium avec qualité et finition exceptionnelles"
       }
+    },
+    "ctaSection": {
+      "title": "Solutions Spécialisées pour Chaque Industrie",
+      "description": "Du concept à la création, nous livrons des produits spécialisés qui répondent aux exigences les plus strictes dans plusieurs industries."
     }
   },
   "footer": {

@@ -28,8 +28,8 @@ export default function SpecializedProductsServicePage() {
       t("specializedProducts.definitionSection.description2"),
       t("specializedProducts.definitionSection.description3"),
     ],
-    rightImage: "/img/packaging/cases.webp",
-    leftImage: "/img/packaging/bijoux-packaging.jpg",
+    rightImage: "/img/specialized-products/specialized1.jpg",
+    leftImage: "/img/specialized-products/specialized2.jpg",
   };
 
   const specializedCategories = [
@@ -41,31 +41,31 @@ export default function SpecializedProductsServicePage() {
     },
     {
       name: t("specializedProducts.categories.sports.name"),
-      image: "/img/packaging/jeans2.jpg",
+      image: "/img/specialized-products/sports.jpg",
       description: t("specializedProducts.categories.sports.description"),
       icon: "⚽",
     },
     {
       name: t("specializedProducts.categories.medical.name"),
-      image: "/img/packaging/cases.webp",
+      image: "/img/specialized-products/medical.jpg",
       description: t("specializedProducts.categories.medical.description"),
       icon: "🏥",
     },
     {
       name: t("specializedProducts.categories.technical.name"),
-      image: "/img/packaging/blue-pack.jpg",
+      image: "/img/specialized-products/technical.jpg",
       description: t("specializedProducts.categories.technical.description"),
       icon: "⚙️",
     },
     {
       name: t("specializedProducts.categories.safety.name"),
-      image: "/img/packaging/paper-packaging.webp",
+      image: "/img/specialized-products/safety.jpg",
       description: t("specializedProducts.categories.safety.description"),
       icon: "🦺",
     },
     {
       name: t("specializedProducts.categories.luxury.name"),
-      image: "/img/packaging/luxury-gift.webp",
+      image: "/img/specialized-products/luxury.jpg",
       description: t("specializedProducts.categories.luxury.description"),
       icon: "💎",
     },
@@ -91,7 +91,7 @@ export default function SpecializedProductsServicePage() {
 
           <div className="flex max-w-[800px] max-h-[500px] h-full w-full justify-end">
             <Image
-              src="/img/packaging/bijoux-packaging.jpg"
+              src="/img/specialized-products/specialized-products.jpg"
               alt="Specialized Products"
               width={800}
               height={500}

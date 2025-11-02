@@ -35,37 +35,37 @@ export default function DevelopmentServicePage() {
   const developmentServices = [
     {
       name: t("development.services.sourcing.name"),
-      image: "/img/packaging/textile-leader.jpg",
+      image: "/img/development/sourcing.jpg",
       description: t("development.services.sourcing.description"),
       icon: "🔍",
     },
     {
       name: t("development.services.rawMaterials.name"),
-      image: "/img/packaging/blue-textile-package.jpg",
+      image: "/img/development/rawMaterials.jpg",
       description: t("development.services.rawMaterials.description"),
       icon: "🧶",
     },
     {
       name: t("development.services.customCreation.name"),
-      image: "/img/packaging/dev-textile.jpg",
+      image: "/img/development/customCreation.jpg",
       description: t("development.services.customCreation.description"),
       icon: "✨",
     },
     {
       name: t("development.services.prototyping.name"),
-      image: "/img/packaging/textile-packaging.webp",
+      image: "/img/development/prototyping.jpg",
       description: t("development.services.prototyping.description"),
       icon: "🔬",
     },
     {
       name: t("development.services.patternMaking.name"),
-      image: "/img/packaging/cases-packaging.jpg",
+      image: "/img/development/patternMaking.jpg",
       description: t("development.services.patternMaking.description"),
       icon: "📐",
     },
     {
       name: t("development.services.designConsultation.name"),
-      image: "/img/packaging/luxury-chocolate.jpg",
+      image: "/img/development/consultationdesgin.jpg",
       description: t("development.services.designConsultation.description"),
       icon: "🎯",
     },

@@ -12,7 +12,10 @@ import ServicesSection from "@/Components/LandingPage/ServicesSection";
 import CompanyStatsSection from "@/Components/LandingPage/CompanyStatsSection";
 // import SustainabilitySection from "@/Components/LandingPage/SustainabilitySection";
 import PackagingShowcaseSection from "@/Components/LandingPage/PackagingShowcaseSection";
-import VisualMerchandisingSection from "@/Components/LandingPage/VisualMerchandisingSection";
+import ManufacturingShowcaseSection from "@/Components/LandingPage/ManufacturingShowcaseSection";
+import DevelopmentShowcaseSection from "@/Components/LandingPage/DevelopmentShowcaseSection";
+import LogisticsShowcaseSection from "@/Components/LandingPage/LogisticsShowcaseSection";
+import SpecializedProductsShowcaseSection from "@/Components/LandingPage/SpecializedProductsShowcaseSection";
 import CertificationsSection from "@/Components/LandingPage/CertificationsSection";
 // import PartnersSection from "@/Components/LandingPage/PartnersSection";
 
@@ -30,7 +33,10 @@ export default function Home() {
       <ServicesSection />
       <CompanyStatsSection />
       <PackagingShowcaseSection />
-      <VisualMerchandisingSection />
+      <ManufacturingShowcaseSection />
+      <DevelopmentShowcaseSection />
+      <LogisticsShowcaseSection />
+      <SpecializedProductsShowcaseSection />
       {/* <SustainabilitySection /> */}
       <CertificationsSection />
       {/* <PartnersSection /> */}
