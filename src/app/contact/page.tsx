@@ -171,7 +171,7 @@ export default function ContactPage() {
                   <a
                     href={buildMailto()}
                     className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary/90 transition duration-300"
-                    style={{ backgroundColor: "#2874fc" }}
+                    style={{ backgroundColor: "#054eb4" }}
                   >
                     Send Message
                   </a>
