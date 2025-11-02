@@ -81,11 +81,6 @@ export default function SpecializedProductsShowcaseSection() {
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           priority={true}
                           unoptimized={true}
-                          onLoad={() =>
-                            console.log(
-                              `Successfully loaded: ${category.image}`
-                            )
-                          }
                           onError={e => {
                             console.error(
                               `Failed to load: ${category.image}`,

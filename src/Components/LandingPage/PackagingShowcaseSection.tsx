@@ -77,9 +77,6 @@ export default function PackagingShowcaseSection() {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority={index < 3}
                         unoptimized={true}
-                        onLoad={() =>
-                          console.log(`Successfully loaded: ${packaging.image}`)
-                        }
                         onError={e => {
                           console.error(
                             `Failed to load: ${packaging.image}`,
