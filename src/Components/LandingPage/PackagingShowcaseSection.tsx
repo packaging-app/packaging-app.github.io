@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { CustomButton } from "@/Components/Button/CustomButton";
-import FloatingCard from "./FloatingCard";
 import { useTranslation } from "react-i18next";
 
 export default function PackagingShowcaseSection() {
@@ -10,46 +9,40 @@ export default function PackagingShowcaseSection() {
 
   const packagingTypes = [
     {
-      name: t("packaging.paperPackaging.name"),
+      key: "paperPackaging",
       image: "/img/packaging/paper-packaging.jpg",
-      description: t("packaging.paperPackaging.description"),
-      color: "from-blue-50 to-blue-100",
       icon: "📄",
+      color: "from-blue-400 to-indigo-500",
     },
     {
-      name: t("packaging.textilePackaging.name"),
+      key: "textilePackaging",
       image: "/img/packaging/blue-textile-package.jpg",
-      description: t("packaging.textilePackaging.description"),
-      color: "from-green-50 to-green-100",
       icon: "🧵",
+      color: "from-green-400 to-emerald-500",
     },
     {
-      name: t("packaging.cases.name"),
+      key: "cases",
       image: "/img/packaging/cases-packaging.jpg",
-      description: t("packaging.cases.description"),
-      color: "from-gray-50 to-gray-100",
       icon: "💼",
+      color: "from-gray-400 to-slate-500",
     },
     {
-      name: t("packaging.jewelleryWatch.name"),
+      key: "jewelleryWatch",
       image: "/img/packaging/jewelleryWatch.jpg",
-      description: t("packaging.jewelleryWatch.description"),
-      color: "from-purple-50 to-purple-100",
       icon: "💎",
+      color: "from-purple-400 to-indigo-500",
     },
     {
-      name: t("packaging.ecommerce.name"),
+      key: "ecommerce",
       image: "/img/packaging/ecommerce-packaging.jpg",
-      description: t("packaging.ecommerce.description"),
-      color: "from-orange-50 to-orange-100",
       icon: "📦",
+      color: "from-orange-400 to-red-500",
     },
     {
-      name: t("packaging.luxuryGift.name"),
-      image: "/img/packaging/gift-packaging.jpg", // Using e-commerce image as placeholder
-      description: t("packaging.luxuryGift.description"),
-      color: "from-pink-50 to-pink-100",
+      key: "luxuryGift",
+      image: "/img/packaging/gift-packaging.jpg",
       icon: "🎁",
+      color: "from-pink-400 to-rose-500",
     },
   ];
 
@@ -70,53 +63,51 @@ export default function PackagingShowcaseSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {packagingTypes.map((packaging, index) => (
-            <FloatingCard key={index} delay={index * 100}>
-              <div className="group hover:-translate-y-1 transition-all duration-300 ease-out">
-                <div className="relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-[1.02]">
-                  {/* Image Container */}
-                  <div className="relative aspect-square overflow-hidden bg-gray-100">
-                    <Image
-                      src={packaging.image}
-                      alt={packaging.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      onError={e => {
-                        // Fallback to icon if image fails to load
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = "none";
-                        const parent = target.parentElement;
-                        if (parent) {
-                          parent.innerHTML = `
-                          <div class="w-full h-full flex items-center justify-center">
-                            <div class="text-6xl">${packaging.icon}</div>
-                          </div>
-                        `;
+            <div key={index} className="opacity-100">
+              <div className="group cursor-pointer">
+                <div className="relative">
+                  {/* Card */}
+                  <div className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden group-hover:scale-105 transform-gpu">
+                    <div className="relative h-64 overflow-hidden bg-gray-100">
+                      <Image
+                        src={packaging.image}
+                        alt={t(`packaging.${packaging.key}.name`)}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-700"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority={index < 3}
+                        unoptimized={true}
+                        onLoad={() =>
+                          console.log(`Successfully loaded: ${packaging.image}`)
                         }
-                      }}
-                    />
+                        onError={e => {
+                          console.error(
+                            `Failed to load: ${packaging.image}`,
+                            e
+                          );
+                        }}
+                      />
 
-                    {/* Icon overlay */}
-                    <div className="absolute top-4 right-4 text-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white bg-opacity-80 rounded-full p-2">
-                      {packaging.icon}
+                      {/* Bottom Overlay for Text - Always Visible */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-20">
+                        <div className="p-6">
+                          <h4 className="text-xl font-bold mb-2 text-white">
+                            {t(`packaging.${packaging.key}.name`)}
+                          </h4>
+                          <p className="text-sm text-gray-200 leading-relaxed">
+                            {t(`packaging.${packaging.key}.description`)}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="p-6 relative z-10">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
-                      {packaging.name}
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
-                      {packaging.description}
-                    </p>
-
-                    {/* Hover effect line */}
-                    <div className="mt-4 h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-300 ease-out"></div>
-                  </div>
+                  {/* Floating elements */}
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-opacity duration-300"></div>
+                  <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-r from-primary to-secondary rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-300 delay-150"></div>
                 </div>
               </div>
-            </FloatingCard>
+            </div>
           ))}
         </div>
 
