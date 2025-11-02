@@ -11,42 +11,42 @@ export default function PackagingShowcaseSection() {
   const packagingTypes = [
     {
       name: t("packaging.paperPackaging.name"),
-      image: "/img/packaging/paper-packaging.webp",
+      image: "/img/packaging/paper-packaging.jpg",
       description: t("packaging.paperPackaging.description"),
       color: "from-blue-50 to-blue-100",
       icon: "📄",
     },
     {
       name: t("packaging.textilePackaging.name"),
-      image: "/img/packaging/textile-packaging.webp",
+      image: "/img/packaging/blue-textile-package.jpg",
       description: t("packaging.textilePackaging.description"),
       color: "from-green-50 to-green-100",
       icon: "🧵",
     },
     {
       name: t("packaging.cases.name"),
-      image: "/img/packaging/cases.webp",
+      image: "/img/packaging/cases-packaging.jpg",
       description: t("packaging.cases.description"),
       color: "from-gray-50 to-gray-100",
       icon: "💼",
     },
     {
       name: t("packaging.jewelleryWatch.name"),
-      image: "/img/packaging/jewellery-watch.webp",
+      image: "/img/packaging/jewelleryWatch.jpg",
       description: t("packaging.jewelleryWatch.description"),
       color: "from-purple-50 to-purple-100",
       icon: "💎",
     },
     {
       name: t("packaging.ecommerce.name"),
-      image: "/img/packaging/ecommerce-packaging.webp",
+      image: "/img/packaging/ecommerce-packaging.jpg",
       description: t("packaging.ecommerce.description"),
       color: "from-orange-50 to-orange-100",
       icon: "📦",
     },
     {
       name: t("packaging.luxuryGift.name"),
-      image: "/img/packaging/luxury-gift.webp", // Using e-commerce image as placeholder
+      image: "/img/packaging/gift-packaging.jpg", // Using e-commerce image as placeholder
       description: t("packaging.luxuryGift.description"),
       color: "from-pink-50 to-pink-100",
       icon: "🎁",

@@ -65,6 +65,18 @@
     "subtitle": "Nos Solutions",
     "title": "Solutions d'Emballage",
     "description": "Solutions d'emballage complètes conçues pour la durabilité et l'impact de marque",
+    "heroDescription": "Solutions d'emballage complètes incluant emballage papier, emballage textile, étuis de protection, emballage bijoux & montres, et emballage e-commerce conçus pour la durabilité et l'impact de marque. Nous nous spécialisons dans la création d'emballages écologiques qui protègent vos produits tout en renforçant votre présence de marque sur le marché.",
+    "getStarted": "Commencer",
+    "definitionSection": {
+      "title": "Qu'est-ce que l'Emballage Durable ?",
+      "description1": "Solutions d'emballage durables qui minimisent l'impact environnemental tout en maintenant la protection des produits et l'attrait de la marque. Notre approche globale couvre tout, de la sélection des matériaux aux considérations de fin de vie.",
+      "description2": "Nous travaillons avec des marques mondiales pour développer des stratégies d'emballage qui s'alignent avec les objectifs de durabilité, réduisent les déchets et améliorent la valeur de la marque grâce à un design innovant et des matériaux écologiques.",
+      "description3": "De l'emballage papier aux solutions textiles en passant par les étuis de protection et l'emballage e-commerce, nous fournissons des solutions d'emballage de bout en bout qui répondent aux exigences fonctionnelles et environnementales."
+    },
+    "showcase": {
+      "title": "Nos Solutions d'Emballage",
+      "description": "Découvrez notre gamme complète de solutions d'emballage durables conçues pour valoriser votre marque et protéger vos produits."
+    },
     "paperPackaging": {
       "name": "Emballage Papier",
       "description": "Solutions d'emballage durables à base de papier"
@@ -214,6 +226,178 @@
       "custom": {
         "name": "Solutions Personnalisées",
         "description": "Chaque projet est unique. Nous créons des solutions sur mesure qui s'adaptent parfaitement à votre marque, vos produits et vos objectifs commerciaux spécifiques."
+      }
+    }
+  },
+  "manufacturing": {
+    "title": "Services de Fabrication",
+    "subtitle": "Notre Fabrication",
+    "heroDescription": "Production industrielle avec équipement moderne et techniques avancées. Nous offrons des services de fabrication complets incluant la production automatique, la sérigraphie, la broderie, le transfert thermique et les processus de lavage spécialisés.",
+    "getStarted": "Commencer",
+    "cta": "Demander un Devis de Fabrication",
+    "definitionSection": {
+      "title": "Qu'est-ce que la Fabrication Avancée ?",
+      "description1": "Notre installation de fabrication combine l'artisanat traditionnel avec la technologie de pointe pour produire des produits textiles de haute qualité. Nous utilisons des systèmes automatisés, des équipements de précision et des artisans qualifiés pour assurer l'excellence de chaque produit.",
+      "description2": "Du concept à la réalisation, notre processus de fabrication est conçu pour l'efficacité, la qualité et la durabilité. Nous travaillons avec des marques de luxe et des entreprises de mode pour donner vie à leurs visions grâce à des capacités de production supérieures.",
+      "description3": "Notre installation comprend des équipements spécialisés pour la sérigraphie, la broderie, le transfert thermique et diverses techniques de finition. Chaque étape est soigneusement surveillée pour maintenir les plus hauts standards de qualité et d'artisanat."
+    },
+    "showcase": {
+      "title": "Nos Capacités de Fabrication",
+      "description": "Explorez nos services de fabrication complets conçus pour répondre aux exigences de la production textile moderne."
+    },
+    "capabilities": {
+      "automation": {
+        "name": "Fabrication Automatisée",
+        "description": "Systèmes automatisés de pointe pour une production efficace et précise"
+      },
+      "screenPrinting": {
+        "name": "Sérigraphie",
+        "description": "Services de sérigraphie de haute qualité pour textiles et vêtements"
+      },
+      "embroidery": {
+        "name": "Services de Broderie",
+        "description": "Travaux de broderie de précision pour finitions de luxe et marquage"
+      },
+      "heatTransfer": {
+        "name": "Transfert Thermique",
+        "description": "Techniques avancées de transfert thermique pour des designs durables et vibrants"
+      },
+      "washing": {
+        "name": "Lavage Spécialisé",
+        "description": "Processus de lavage et finition professionnels pour des résultats optimaux"
+      },
+      "qualityControl": {
+        "name": "Contrôle Qualité",
+        "description": "Mesures rigoureuses de contrôle qualité tout au long du processus de production"
+      }
+    }
+  },
+  "development": {
+    "title": "Services de Développement",
+    "subtitle": "Notre Développement",
+    "heroDescription": "Sourcing et développement de solutions textiles personnalisées. Nous fournissons des services de développement complets incluant le sourcing, l'approvisionnement en matières premières, la création personnalisée, le prototypage et la consultation en design.",
+    "getStarted": "Commencer",
+    "cta": "Démarrer un Projet de Développement",
+    "definitionSection": {
+      "title": "Qu'est-ce que le Développement Textile ?",
+      "description1": "Nos services de développement englobent l'ensemble du cycle de vie de la création de produits textiles, du concept initial à la production finale. Nous travaillons étroitement avec les clients pour comprendre leur vision et la transformer en produits tangibles de haute qualité.",
+      "description2": "Nous nous spécialisons dans le sourcing des meilleurs matériaux et le développement de solutions textiles innovantes qui répondent aux exigences spécifiques. Notre équipe d'experts gère tout, de la sélection des tissus au développement de patrons et au prototypage.",
+      "description3": "Notre processus de développement comprend une recherche de marché complète, des tests de matériaux et un raffinement itératif du design pour s'assurer que le produit final dépasse les attentes tout en maintenant la rentabilité et la durabilité."
+    },
+    "showcase": {
+      "title": "Nos Services de Développement",
+      "description": "Découvrez nos capacités de développement complètes qui donnent vie à vos idées textiles."
+    },
+    "services": {
+      "sourcing": {
+        "name": "Sourcing Global",
+        "description": "Sourcing mondial de matériaux et composants premium"
+      },
+      "rawMaterials": {
+        "name": "Matières Premières",
+        "description": "Sélection et approvisionnement en matières premières de haute qualité"
+      },
+      "customCreation": {
+        "name": "Création Personnalisée",
+        "description": "Solutions textiles sur mesure adaptées à vos spécifications"
+      },
+      "prototyping": {
+        "name": "Prototypage",
+        "description": "Services de prototypage rapide pour test et validation"
+      },
+      "patternMaking": {
+        "name": "Modélisme",
+        "description": "Services experts de modélisme et design technique"
+      },
+      "designConsultation": {
+        "name": "Consultation Design",
+        "description": "Consultation professionnelle en design et direction créative"
+      }
+    }
+  },
+  "logistics": {
+    "title": "Services Logistiques",
+    "subtitle": "Notre Logistique",
+    "heroDescription": "Services logistiques complets pour vos exportations avec gestion d'inventaire, transport international et suivi de commandes en temps réel. Nous assurons une livraison sans faille de notre installation à votre destination dans le monde entier.",
+    "getStarted": "Commencer",
+    "cta": "Optimiser Votre Logistique",
+    "definitionSection": {
+      "title": "Qu'est-ce que la Logistique Globale ?",
+      "description1": "Notre réseau logistique s'étend dans le monde entier, fournissant des services de transport et de distribution sans faille pour les produits textiles. Nous gérons tout, de l'entreposage à la livraison finale, en nous assurant que vos produits arrivent à destination en sécurité et à temps.",
+      "description2": "Nous tirons parti de la technologie avancée et des partenariats stratégiques pour optimiser les routes d'expédition, réduire les coûts et minimiser les temps de transit. Notre équipe gère le dédouanement, la documentation et la conformité pour assurer des opérations internationales fluides.",
+      "description3": "Des petites commandes de boutique aux grandes distributions de détail, nos solutions logistiques flexibles s'adaptent à vos besoins spécifiques tout en maintenant les plus hauts standards de service et de fiabilité."
+    },
+    "showcase": {
+      "title": "Nos Solutions Logistiques",
+      "description": "Explorez nos services logistiques complets conçus pour rationaliser vos opérations de chaîne d'approvisionnement."
+    },
+    "services": {
+      "warehouseManagement": {
+        "name": "Gestion d'Entrepôt",
+        "description": "Gestion d'entrepôt professionnelle et systèmes de contrôle d'inventaire"
+      },
+      "internationalShipping": {
+        "name": "Expédition Internationale",
+        "description": "Solutions d'expédition mondiales avec tarifs compétitifs et service fiable"
+      },
+      "orderTracking": {
+        "name": "Suivi en Temps Réel",
+        "description": "Systèmes de suivi avancés pour une visibilité complète des expéditions"
+      },
+      "inventoryManagement": {
+        "name": "Gestion d'Inventaire",
+        "description": "Gestion d'inventaire complète et optimisation des stocks"
+      },
+      "customsClearance": {
+        "name": "Dédouanement",
+        "description": "Services experts de dédouanement et de documentation"
+      },
+      "deliveryOptimization": {
+        "name": "Optimisation de Livraison",
+        "description": "Routes de livraison optimisées et planification pour une efficacité maximale"
+      }
+    }
+  },
+  "specializedProducts": {
+    "title": "Produits Spécialisés",
+    "subtitle": "Nos Spécialisations",
+    "heroDescription": "Produits spécialisés et techniques selon vos spécifications. Nous créons des articles artisanaux, équipements sportifs, textiles médicaux, tissus techniques et produits de sécurité adaptés pour répondre aux exigences spécifiques de l'industrie.",
+    "getStarted": "Commencer",
+    "cta": "Explorer les Solutions Spécialisées",
+    "definitionSection": {
+      "title": "Que sont les Produits Spécialisés ?",
+      "description1": "Notre division de produits spécialisés se concentre sur la création de textiles haute performance pour des industries et applications spécifiques. Nous combinons l'artisanat traditionnel avec l'innovation technique pour produire des produits qui répondent aux exigences les plus exigeantes.",
+      "description2": "Des textiles de qualité médicale aux équipements de sécurité techniques, nos produits spécialisés sont fabriqués pour dépasser les standards de l'industrie. Nous travaillons étroitement avec les organismes de réglementation et les organisations de certification pour assurer la conformité et la qualité.",
+      "description3": "Chaque produit spécialisé est soigneusement conçu et testé pour assurer une performance optimale dans son application prévue. Notre expertise couvre plusieurs industries, nous permettant de fournir des solutions innovantes pour des besoins de marché divers."
+    },
+    "showcase": {
+      "title": "Nos Catégories Spécialisées",
+      "description": "Découvrez notre gamme de produits spécialisés conçus pour des industries et applications spécifiques."
+    },
+    "categories": {
+      "handmade": {
+        "name": "Produits Artisanaux",
+        "description": "Textiles artisanaux et accessoires avec savoir-faire traditionnel"
+      },
+      "sports": {
+        "name": "Sport & Athlétisme",
+        "description": "Équipement sportif haute performance et solutions de vêtements athlétiques"
+      },
+      "medical": {
+        "name": "Textiles Médicaux",
+        "description": "Textiles de qualité médicale et produits de santé avec standards de qualité stricts"
+      },
+      "technical": {
+        "name": "Tissus Techniques",
+        "description": "Tissus techniques avancés pour applications industrielles et spécialisées"
+      },
+      "safety": {
+        "name": "Équipement de Sécurité",
+        "description": "Équipement de sécurité professionnel et solutions textiles de protection"
+      },
+      "luxury": {
+        "name": "Articles de Luxe",
+        "description": "Produits textiles de luxe premium avec qualité et finition exceptionnelles"
       }
     }
   },

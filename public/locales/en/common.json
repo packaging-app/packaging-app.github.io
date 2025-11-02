@@ -54,6 +54,18 @@
     "subtitle": "Our Solutions",
     "title": "Packaging Solutions",
     "description": "Comprehensive packaging solutions designed for sustainability and brand impact",
+    "heroDescription": "Comprehensive packaging solutions including paper packaging, textile packaging, protective cases, jewelry & watch packaging, and e-commerce packaging designed for sustainability and brand impact. We specialize in creating eco-friendly packaging that protects your products while enhancing your brand presence in the market.",
+    "getStarted": "Get Started",
+    "definitionSection": {
+      "title": "What is Sustainable Packaging?",
+      "description1": "Sustainable packaging solutions that minimize environmental impact while maintaining product protection and brand appeal. Our comprehensive approach covers everything from material selection to end-of-life considerations.",
+      "description2": "We work with global brands to develop packaging strategies that align with sustainability goals, reduce waste, and enhance brand value through innovative design and eco-friendly materials.",
+      "description3": "From paper packaging and textile solutions to protective cases and e-commerce packaging, we provide end-to-end packaging solutions that meet both functional and environmental requirements."
+    },
+    "showcase": {
+      "title": "Our Packaging Solutions",
+      "description": "Discover our complete range of sustainable packaging solutions designed to enhance your brand and protect your products."
+    },
     "paperPackaging": {
       "name": "Paper Packaging",
       "description": "Sustainable paper-based packaging solutions"
@@ -195,6 +207,178 @@
       "custom": {
         "name": "Customized Solutions",
         "description": "Every project is unique. We create tailor-made solutions that perfectly adapt to your brand, products, and specific commercial objectives."
+      }
+    }
+  },
+  "manufacturing": {
+    "title": "Manufacturing Services",
+    "subtitle": "Our Manufacturing",
+    "heroDescription": "Industrial production with modern equipment and advanced techniques. We offer comprehensive manufacturing services including automatic production, screen printing, embroidery, heat transfer, and specialized washing processes.",
+    "getStarted": "Get Started",
+    "cta": "Request Manufacturing Quote",
+    "definitionSection": {
+      "title": "What is Advanced Manufacturing?",
+      "description1": "Our manufacturing facility combines traditional craftsmanship with cutting-edge technology to produce high-quality textile products. We utilize automated systems, precision equipment, and skilled artisans to ensure excellence in every product.",
+      "description2": "From concept to completion, our manufacturing process is designed for efficiency, quality, and sustainability. We work with luxury brands and fashion companies to bring their visions to life through superior production capabilities.",
+      "description3": "Our facility includes specialized equipment for screen printing, embroidery, heat transfer, and various finishing techniques. Every step is carefully monitored to maintain the highest standards of quality and craftsmanship."
+    },
+    "showcase": {
+      "title": "Our Manufacturing Capabilities",
+      "description": "Explore our comprehensive manufacturing services designed to meet the demands of modern textile production."
+    },
+    "capabilities": {
+      "automation": {
+        "name": "Automated Manufacturing",
+        "description": "State-of-the-art automated systems for efficient and precise production"
+      },
+      "screenPrinting": {
+        "name": "Screen Printing",
+        "description": "High-quality screen printing services for textiles and garments"
+      },
+      "embroidery": {
+        "name": "Embroidery Services",
+        "description": "Precision embroidery work for luxury finishes and branding"
+      },
+      "heatTransfer": {
+        "name": "Heat Transfer",
+        "description": "Advanced heat transfer techniques for durable and vibrant designs"
+      },
+      "washing": {
+        "name": "Specialized Washing",
+        "description": "Professional washing and finishing processes for optimal results"
+      },
+      "qualityControl": {
+        "name": "Quality Control",
+        "description": "Rigorous quality control measures throughout the production process"
+      }
+    }
+  },
+  "development": {
+    "title": "Development Services",
+    "subtitle": "Our Development",
+    "heroDescription": "Sourcing and development of custom textile solutions. We provide comprehensive development services including sourcing, raw materials procurement, custom creation, prototyping, and design consultation.",
+    "getStarted": "Get Started",
+    "cta": "Start Development Project",
+    "definitionSection": {
+      "title": "What is Textile Development?",
+      "description1": "Our development services encompass the entire lifecycle of textile product creation, from initial concept to final production. We work closely with clients to understand their vision and transform it into tangible, high-quality products.",
+      "description2": "We specialize in sourcing the finest materials and developing innovative textile solutions that meet specific requirements. Our team of experts handles everything from fabric selection to pattern development and prototyping.",
+      "description3": "Our development process includes comprehensive market research, material testing, and iterative design refinement to ensure the final product exceeds expectations while maintaining cost-effectiveness and sustainability."
+    },
+    "showcase": {
+      "title": "Our Development Services",
+      "description": "Discover our comprehensive development capabilities that bring your textile ideas to life."
+    },
+    "services": {
+      "sourcing": {
+        "name": "Global Sourcing",
+        "description": "Worldwide sourcing of premium materials and components"
+      },
+      "rawMaterials": {
+        "name": "Raw Materials",
+        "description": "High-quality raw materials selection and procurement"
+      },
+      "customCreation": {
+        "name": "Custom Creation",
+        "description": "Bespoke textile solutions tailored to your specifications"
+      },
+      "prototyping": {
+        "name": "Prototyping",
+        "description": "Rapid prototyping services for testing and validation"
+      },
+      "patternMaking": {
+        "name": "Pattern Making",
+        "description": "Expert pattern making and technical design services"
+      },
+      "designConsultation": {
+        "name": "Design Consultation",
+        "description": "Professional design consultation and creative direction"
+      }
+    }
+  },
+  "logistics": {
+    "title": "Logistics Services",
+    "subtitle": "Our Logistics",
+    "heroDescription": "Complete logistics services for your exports with inventory management, international transport, and real-time order tracking. We ensure seamless delivery from our facility to your destination worldwide.",
+    "getStarted": "Get Started",
+    "cta": "Optimize Your Logistics",
+    "definitionSection": {
+      "title": "What is Global Logistics?",
+      "description1": "Our logistics network spans the globe, providing seamless transportation and distribution services for textile products. We handle everything from warehousing to final delivery, ensuring your products reach their destination safely and on time.",
+      "description2": "We leverage advanced technology and strategic partnerships to optimize shipping routes, reduce costs, and minimize transit times. Our team manages customs clearance, documentation, and compliance to ensure smooth international operations.",
+      "description3": "From small boutique orders to large-scale retail distributions, our flexible logistics solutions adapt to your specific needs while maintaining the highest standards of service and reliability."
+    },
+    "showcase": {
+      "title": "Our Logistics Solutions",
+      "description": "Explore our comprehensive logistics services designed to streamline your supply chain operations."
+    },
+    "services": {
+      "warehouseManagement": {
+        "name": "Warehouse Management",
+        "description": "Professional warehouse management and inventory control systems"
+      },
+      "internationalShipping": {
+        "name": "International Shipping",
+        "description": "Global shipping solutions with competitive rates and reliable service"
+      },
+      "orderTracking": {
+        "name": "Real-time Tracking",
+        "description": "Advanced tracking systems for complete shipment visibility"
+      },
+      "inventoryManagement": {
+        "name": "Inventory Management",
+        "description": "Comprehensive inventory management and stock optimization"
+      },
+      "customsClearance": {
+        "name": "Customs Clearance",
+        "description": "Expert customs clearance and documentation services"
+      },
+      "deliveryOptimization": {
+        "name": "Delivery Optimization",
+        "description": "Optimized delivery routes and scheduling for maximum efficiency"
+      }
+    }
+  },
+  "specializedProducts": {
+    "title": "Specialized Products",
+    "subtitle": "Our Specializations",
+    "heroDescription": "Specialized and technical products according to your specifications. We create handmade items, sports equipment, medical textiles, technical fabrics, and safety products tailored to meet specific industry requirements.",
+    "getStarted": "Get Started",
+    "cta": "Explore Specialized Solutions",
+    "definitionSection": {
+      "title": "What are Specialized Products?",
+      "description1": "Our specialized products division focuses on creating high-performance textiles for specific industries and applications. We combine traditional craftsmanship with technical innovation to produce products that meet the most demanding requirements.",
+      "description2": "From medical-grade textiles to technical safety equipment, our specialized products are manufactured to exceed industry standards. We work closely with regulatory bodies and certification organizations to ensure compliance and quality.",
+      "description3": "Each specialized product is carefully designed and tested to ensure optimal performance in its intended application. Our expertise spans multiple industries, allowing us to provide innovative solutions for diverse market needs."
+    },
+    "showcase": {
+      "title": "Our Specialized Categories",
+      "description": "Discover our range of specialized products designed for specific industries and applications."
+    },
+    "categories": {
+      "handmade": {
+        "name": "Handmade Products",
+        "description": "Artisanal handmade textiles and accessories with traditional craftsmanship"
+      },
+      "sports": {
+        "name": "Sports & Athletic",
+        "description": "High-performance sports equipment and athletic wear solutions"
+      },
+      "medical": {
+        "name": "Medical Textiles",
+        "description": "Medical-grade textiles and healthcare products with strict quality standards"
+      },
+      "technical": {
+        "name": "Technical Fabrics",
+        "description": "Advanced technical fabrics for industrial and specialized applications"
+      },
+      "safety": {
+        "name": "Safety Equipment",
+        "description": "Professional safety equipment and protective textile solutions"
+      },
+      "luxury": {
+        "name": "Luxury Items",
+        "description": "Premium luxury textile products with exceptional quality and finish"
       }
     }
   },
