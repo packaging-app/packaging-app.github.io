@@ -116,7 +116,7 @@ export default function ServicesSection() {
       description: t("services.textilePackaging.description"),
       icon: CubeIcon,
       link: "/packaging",
-      image: "/img/p6.jpg",
+      image: "/img/packaging/new-picture-1.png",
       subservices: t("services.textilePackaging.subservices", {
         returnObjects: true,
       }) as string[],
@@ -126,7 +126,7 @@ export default function ServicesSection() {
       description: t("services.manufacturing.description"),
       icon: CogIcon,
       link: "/manufacturing",
-      image: "/img/p7.jpg",
+      image: "/img/packaging/usine.jpg",
       subservices: t("services.manufacturing.subservices", {
         returnObjects: true,
       }) as string[],
@@ -136,7 +136,7 @@ export default function ServicesSection() {
       description: t("services.development.description"),
       icon: BeakerIcon,
       link: "/development",
-      image: "/img/p8.jpg",
+      image: "/img/packaging/dev-textile.jpg",
       subservices: t("services.development.subservices", {
         returnObjects: true,
       }) as string[],

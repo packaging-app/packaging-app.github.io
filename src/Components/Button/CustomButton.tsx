@@ -24,8 +24,8 @@ export function CustomButton({
         className={`md:px-5 px-3 py-2 md:text-md rounded-md shadow-md font-semibold hover:cursor-pointer transition duration-300 w-fit ${differentClasses}`}
         style={
           isWhite
-            ? { borderColor: "#2874fc", color: "#2874fc" }
-            : { backgroundColor: "#2874fc" }
+            ? { borderColor: "#054eb4", color: "#054eb4" }
+            : { backgroundColor: "#054eb4" }
         }
         onClick={onClick}
       >

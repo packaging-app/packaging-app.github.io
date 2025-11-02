@@ -12,7 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#2874fc",
+          DEFAULT: "#054eb4",
           25: "#f0f4ff",
           50: "#e6f0ff",
           100: "#cce0ff",
@@ -22,7 +22,7 @@ const config: Config = {
           500: "#2874fc",
           600: "#1f5cc9",
           700: "#164496",
-          800: "#0d2c63",
+          800: "#054eb4",
           900: "#041430",
         },
         secondary: {
@@ -39,7 +39,7 @@ const config: Config = {
           800: "#1b1919",
           900: "#0a0808",
         },
-        "main-blue": "#2874fc",
+        "main-blue": "#054eb4",
         "secondary-gray": "#4e4c4c",
         faint: "#f8f9fa",
         success: {

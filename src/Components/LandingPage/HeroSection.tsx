@@ -28,7 +28,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-7 grid-rows-6 items-end max-w-[800px] max-h-[500px] gap-4">
           <div className="col-start-5 col-end-8 row-start-1 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[80px] rounded-br-[80px] relative">
             <Image
-              src="/img/packaging/new-picture-1.png"
+              src="/img/packaging/jeans.jpg"
               alt="Paper packaging solutions"
               className="object-cover shadow-md"
               fill
@@ -37,20 +37,20 @@ export default function HeroSection() {
           </div>
           <div className="col-start-1 col-end-5 row-start-5 row-end-7 h-full w-full overflow-hidden rounded-md rounded-tl-[50px] rounded-br-[50px] flex items-center">
             <img
-              src="/img/packaging/ecommerce-packaging.webp"
+              src="/img/packaging/blue-pack.jpg"
               alt="Textile packaging solutions"
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
           <div className="col-start-3 col-end-5 row-start-2 row-end-5 h-full w-full overflow-hidden rounded-[40px]">
             <img
-              src="/img/packaging/paper-packaging.webp"
+              src="/img/packaging/jeans2.jpg"
               alt="Protective cases packaging"
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
           <div className="col-start-1 col-end-3 row-start-4 row-end-5 h-full w-full rounded-md rounded-tl-[50px] rounded-br-[50px] bg-secondary"></div>
-          <div className="col-start-2 col-end-3 row-start-3 row-end-4 aspect-square w-full rounded-full animate-bounce-vertical bg-primary"></div>
+          <div className="col-start-2 col-end-3 row-start-3 row-end-4 aspect-square w-full rounded-full animate-bounce-vertical bg-primary-800"></div>
         </div>
       </div>
     </section>

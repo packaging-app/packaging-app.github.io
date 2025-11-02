@@ -9,26 +9,15 @@ export default function IntroductionSection() {
   return (
     <section className="py-20 opacity-0 -translate-x-1">
       <div className="container mx-auto w-full flex flex-col gap-10 md:flex-row items-center justify-evenly px-6 lg:px-10">
-        {/* Left Images */}
-        <div className="grid grid-cols-7 grid-rows-10 items-end max-w-[800px] max-h-[400px] gap-4">
-          <div className="col-start-1 col-end-5 row-start-1 row-end-4 h-full w-full overflow-hidden rounded-tl-[50px] rounded-br-[50px]">
+        {/* Left Image */}
+        <div className="lg:w-[46%] md:min-w-96 min-w-full">
+          <div className="h-[400px] w-full overflow-hidden rounded-md rounded-tr-[80px] rounded-bl-[80px] flex items-center">
             <img
-              src="/img/lp-i-t.png"
-              alt="Whiteboard presentation"
-              className="object-cover min-w-full min-h-full shadow-md"
-            />
-          </div>
-          <div className="col-start-1 col-end-8 row-start-4 row-end-11 h-full w-full overflow-hidden rounded-md rounded-tr-[80px] rounded-bl-[80px] flex items-center">
-            <img
-              src="/img/luxury-chocolate.jpg"
+              src="/img/packaging/textile-leader.jpg"
               alt="Team meeting"
               className="object-cover min-w-full min-h-full shadow-md"
             />
           </div>
-          <div
-            className="col-start-5 col-end-6 row-start-2 row-end-4 aspect-square h-[120%] rounded-full"
-            style={{ backgroundColor: "#4e4c4c" }}
-          ></div>
         </div>
 
         {/* Right Content */}
