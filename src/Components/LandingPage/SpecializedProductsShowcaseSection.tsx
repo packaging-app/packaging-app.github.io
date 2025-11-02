@@ -77,28 +77,30 @@ export default function SpecializedProductsShowcaseSection() {
                             `specializedProducts.categories.${category.key}.name`
                           )}
                           fill
-                          className="object-cover group-hover:scale-110 transition-transform duration-700 z-0"
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          priority={index < 3}
+                          priority={true}
+                          unoptimized={true}
                           onLoad={() =>
-                            console.log(`Loaded: ${category.image}`)
+                            console.log(
+                              `Successfully loaded: ${category.image}`
+                            )
                           }
                           onError={e => {
-                            console.log(`Failed to load: ${category.image}`, e);
+                            console.error(
+                              `Failed to load: ${category.image}`,
+                              e
+                            );
                           }}
                         />
-                        {/* Subtle Gradient Overlay - Only on Hover */}
-                        <div
-                          className={`absolute inset-0 bg-gradient-to-t ${category.color} opacity-0 group-hover:opacity-40 transition-opacity duration-500 z-5`}
-                        ></div>
 
                         {/* Icon Badge */}
-                        <div className="absolute top-4 right-4 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300 z-20">
+                        <div className="absolute top-4 right-4 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300 z-30">
                           <span className="text-2xl">{category.icon}</span>
                         </div>
 
                         {/* Bottom Overlay for Text */}
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none">
                           <div className="p-6">
                             <h4 className="text-xl font-bold mb-2 text-white">
                               {t(
