@@ -28,44 +28,44 @@ export default function LogisticsServicePage() {
       t("logistics.definitionSection.description2"),
       t("logistics.definitionSection.description3"),
     ],
-    rightImage: "/img/packaging/cases-packaging.jpg",
-    leftImage: "/img/packaging/ecommerce-packaging.jpg",
+    rightImage: "/img/logistics/sourcing1.jpg",
+    leftImage: "/img/logistics/sourcing2.jpg",
   };
 
   const logisticsServices = [
     {
       name: t("logistics.services.warehouseManagement.name"),
-      image: "/img/packaging/cases-packaging.jpg",
+      image: "/img/logistics/warehouseManagement.jpg",
       description: t("logistics.services.warehouseManagement.description"),
       icon: "🏪",
     },
     {
       name: t("logistics.services.internationalShipping.name"),
-      image: "/img/packaging/ecommerce-packaging.jpg",
+      image: "/img/logistics/internationalShipping.jpg",
       description: t("logistics.services.internationalShipping.description"),
       icon: "🚛",
     },
     {
       name: t("logistics.services.orderTracking.name"),
-      image: "/img/packaging/blue-pack.jpg",
+      image: "/img/logistics/orderTracking.jpg",
       description: t("logistics.services.orderTracking.description"),
       icon: "📱",
     },
     {
       name: t("logistics.services.inventoryManagement.name"),
-      image: "/img/packaging/packages-brown.png",
+      image: "/img/logistics/inventoryManagement.jpg",
       description: t("logistics.services.inventoryManagement.description"),
       icon: "📊",
     },
     {
       name: t("logistics.services.customsClearance.name"),
-      image: "/img/packaging/paper-packaging.jpg",
+      image: "/img/logistics/customsClearance.jpg",
       description: t("logistics.services.customsClearance.description"),
       icon: "📋",
     },
     {
       name: t("logistics.services.deliveryOptimization.name"),
-      image: "/img/packaging/gift-packaging.jpg",
+      image: "/img/logistics/deliveryOptimization.jpg",
       description: t("logistics.services.deliveryOptimization.description"),
       icon: "🎯",
     },
@@ -91,7 +91,7 @@ export default function LogisticsServicePage() {
 
           <div className="flex max-w-[800px] max-h-[500px] h-full w-full justify-end">
             <Image
-              src="/img/packaging/ecommerce-packaging.jpg"
+              src="/img/p9.jpg"
               alt="Logistics Services"
               width={800}
               height={500}

@@ -251,6 +251,10 @@
         "name": "Quality Control",
         "description": "Rigorous quality control measures throughout the production process"
       }
+    },
+    "ctaSection": {
+      "title": "Ready to Start Manufacturing?",
+      "description": "Get a custom quote for your manufacturing needs"
     }
   },
   "development": {
@@ -311,6 +315,20 @@
     "showcase": {
       "title": "Our Logistics Solutions",
       "description": "Explore our comprehensive logistics services designed to streamline your supply chain operations."
+    },
+    "globalNetwork": {
+      "title": "Global Logistics Network",
+      "description": "Connecting your products to the world",
+      "stats": {
+        "countries": "Countries",
+        "shipments": "Shipments",
+        "onTime": "On-Time",
+        "support": "Support"
+      }
+    },
+    "ctaSection": {
+      "title": "Streamline Your Supply Chain",
+      "description": "Let us handle the logistics while you focus on growing your business"
     },
     "services": {
       "warehouseManagement": {
@@ -380,6 +398,10 @@
         "name": "Luxury Items",
         "description": "Premium luxury textile products with exceptional quality and finish"
       }
+    },
+    "ctaSection": {
+      "title": "Specialized Solutions for Every Industry",
+      "description": "From concept to creation, we deliver specialized products that meet the most demanding requirements across multiple industries."
     }
   },
   "footer": {
